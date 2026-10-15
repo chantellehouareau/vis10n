@@ -322,6 +322,14 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .dv .btn .ext{color:currentColor}
 @media (max-width:980px){.dv-grid{grid-template-columns:minmax(0,1fr);gap:20px}}
 @media (max-width:480px){.disc{grid-template-columns:minmax(0,1fr)}}
+.ft{grid-template-columns:auto minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,64px);padding-block:clamp(24px,3vw,40px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ft .photo{width:clamp(120px,14vw,200px);aspect-ratio:4/5}
+.ft .photo img{top:0;height:100%;object-position:52% 14%}
+.ft .photo::after{display:none}
+.ft blockquote{font-size:clamp(20px,2vw,30px)!important;line-height:1.2!important;max-width:30ch}
+.ft .who{margin-top:18px}
+@media (max-width:980px){.ft{grid-template-columns:auto minmax(0,1fr)!important}}
+@media (max-width:560px){.ft{grid-template-columns:minmax(0,1fr)!important}.ft .photo{width:120px}}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{padding:clamp(24px,3vw,40px) clamp(12px,2vw,28px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
 .stat:first-child{border-left:0;padding-left:0}
@@ -607,14 +615,14 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
     </a>
   </section>
 
-  <section class="sec wrap">
+  <section class="sec tight wrap">
     <div class="ft">
-      <div class="photo" data-rv><img data-speed="-0.08" src="img/rayj-tunnel.jpg" alt="RayJ Dennis walking through an arena tunnel"><span class="cap2 label plain">RayJ Dennis · Founder and CEO</span></div>
+      <div class="photo" data-rv><img src="img/rayj-tunnel.jpg" alt="RayJ Dennis walking through an arena tunnel"></div>
       <div data-rv>
         <span class="label">Founder and direction</span>
-        <blockquote style="margin-top:28px">That experience informs how he builds. Not from the outside, but <span style="color:var(--blue)">from within.</span></blockquote>
+        <blockquote style="margin-top:18px">That experience informs how he builds. Not from the outside, but <span style="color:var(--fg-2)">from within.</span></blockquote>
         <div class="who"><b>RayJ Dennis</b><span>Founder and CEO · Atlanta Hawks</span></div>
-        <div style="margin-top:36px"><a class="btn" href="#founder">Meet RayJ <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
+        <div style="margin-top:24px"><a class="btn" href="#founder">Meet RayJ <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
       </div>
     </div>
   </section>
