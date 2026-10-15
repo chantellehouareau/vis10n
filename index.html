@@ -7,7 +7,7 @@
 <meta name="description" content="VIS10N is a global holding company operating at the intersection of sport, media, marketing, technology and real estate. Founded by RayJ Dennis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500&family=Geist+Mono:wght@400;500&display=swap">
 <style>
 /* Layout concept: a dark, cinematic editorial site. Full-bleed scenes, huge light-weight type,
    scroll-lit statements, one pinned horizontal portfolio strip. Blue is the brand line; gold is a rare spark. */
@@ -43,7 +43,7 @@ img{display:block;max-width:100%}
 :focus-visible{outline:1px solid var(--blue);outline-offset:4px}
 h1,h2,h3,h4{font-weight:300;margin:0;text-wrap:balance;letter-spacing:-.025em;line-height:1.02}
 p{margin:0}
-em,.serif{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+em,.serif{font-style:normal;color:var(--fg-2)}
 .wrap{padding-inline:var(--gut);width:100%}
 .label{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:inline-flex;align-items:center;gap:10px}
 .label::before{content:"";width:18px;height:1px;background:var(--blue)}
@@ -122,7 +122,7 @@ section{position:relative}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
 .hero h1 .ln>span{display:inline-block;animation:rise 1.4s var(--ease) both}
 .hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
-.hero h1 em{font-weight:400;letter-spacing:-.03em;color:var(--fg)}
+
 .hero h1 .tenbar{position:relative;display:inline-block}
 @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
 .hero-foot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:end;margin-top:clamp(32px,5vw,64px);padding-top:24px;border-top:1px solid var(--line)}
@@ -168,7 +168,7 @@ section{position:relative}
 .ci.open .body{grid-template-rows:1fr}
 .ci .body>div{overflow:hidden}
 .ci .body .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(20px,4vw,64px);padding-bottom:clamp(28px,3vw,44px)}
-.ci .body .lead{font-family:var(--f-serif);font-style:italic;font-size:clamp(22px,2.2vw,32px);line-height:1.2;color:var(--fg)}
+.ci .body .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(22px,2.2vw,32px);line-height:1.2;color:var(--fg)}
 .ci .body p.d{color:var(--fg-2);max-width:62ch}
 
 /* ---------- model grid ---------- */
@@ -211,7 +211,7 @@ section{position:relative}
 .photo img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:52% 14%;filter:contrast(1.04) brightness(.92)}
 .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(6,7,8,.6))}
 .photo .cap2{position:absolute;left:20px;bottom:18px;z-index:2}
-.ft blockquote{margin:0;font-family:var(--f-serif);font-style:italic;font-size:clamp(32px,4.2vw,68px);line-height:1.04;letter-spacing:-.02em}
+.ft blockquote{margin:0;font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1.08;letter-spacing:-.035em}
 .ft .who{display:flex;flex-direction:column;gap:4px;margin-top:32px}
 .ft .who b{font-weight:400}
 .ft .who span{color:var(--mute);font-size:14px}
@@ -274,7 +274,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .co .hero-art h2{position:absolute;inset:0;font-size:clamp(56px,12vw,200px);font-weight:200;letter-spacing:-.06em;line-height:.88;display:flex;align-items:center;justify-content:center;pointer-events:none}
 .co .hero-art h2 .lg{height:calc(clamp(52px,7.4vw,112px) * var(--lh,1));max-height:min(200px,40%);max-width:min(70%,820px);width:auto;object-fit:contain;filter:drop-shadow(0 4px 30px rgba(6,7,8,.4))}
 .co .info{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr) minmax(0,.6fr);gap:clamp(20px,4vw,64px);margin-top:clamp(24px,3vw,40px)}
-.co .info .lead{font-family:var(--f-serif);font-style:italic;font-size:clamp(24px,2.4vw,36px);line-height:1.12}
+.co .info .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(24px,2.4vw,36px);line-height:1.12}
 .co .info p.d{color:var(--fg-2);max-width:60ch}
 .co dl{margin:0;display:flex;flex-direction:column;gap:14px;font-size:14px}
 .co dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
@@ -303,14 +303,14 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .fsteps{display:flex;flex-direction:column}
 .fstep{min-height:80svh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding-block:6vh}
 .dv-head{margin-bottom:clamp(24px,3vw,40px)}
-.dv{position:relative;display:block;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:radial-gradient(90% 120% at 100% 0%,rgba(92,161,246,.10),transparent 60%),var(--ink-2);padding:clamp(28px,5vw,72px);transition:border-color .5s}
+.dv{position:relative;display:block;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:radial-gradient(90% 120% at 100% 0%,rgba(92,161,246,.10),transparent 60%),var(--ink-2);padding:clamp(24px,3.4vw,48px);transition:border-color .5s}
 .dv::before{content:"";position:absolute;left:0;top:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease)}
 .dv:hover{border-color:var(--line-2)}
 .dv:hover::before{transform:scaleX(1)}
-.dv .vm{position:absolute;right:-3%;bottom:-16%;width:min(520px,46%);height:auto;opacity:.07;pointer-events:none;transition:opacity .8s,transform 1.2s var(--ease)}
-.dv:hover .vm{opacity:.12;transform:translateY(-10px)}
-.dv-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:end}
-.dv h2{font-size:clamp(48px,7vw,120px);font-weight:200;letter-spacing:-.055em;line-height:.9;margin-top:22px}
+.dv .vm{position:absolute;right:-2%;bottom:-20%;width:min(300px,30%);height:auto;opacity:.05;pointer-events:none;transition:opacity .8s,transform 1.2s var(--ease)}
+.dv:hover .vm{opacity:.09;transform:translateY(-10px)}
+.dv-grid{position:relative;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:start}
+.dv h2{font-size:clamp(30px,3.4vw,52px);font-weight:300;letter-spacing:-.04em;line-height:1;margin-top:16px}
 .dv-sub{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .dv-lede{color:var(--fg-2);max-width:52ch}
 .disc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px;margin-top:28px;border-top:1px solid var(--line)}
@@ -320,7 +320,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .dv:hover .btn{color:var(--ink);border-color:var(--gold)}
 .dv:hover .btn::before{transform:translateY(0)}
 .dv .btn .ext{color:currentColor}
-@media (max-width:980px){.dv-grid{grid-template-columns:minmax(0,1fr)}.dv .vm{width:70%;bottom:-6%}}
+@media (max-width:980px){.dv-grid{grid-template-columns:minmax(0,1fr);gap:20px}.dv .vm{width:40%;bottom:-8%}}
 @media (max-width:480px){.disc{grid-template-columns:minmax(0,1fr)}}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{padding:clamp(24px,3vw,40px) clamp(12px,2vw,28px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
@@ -341,7 +341,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .vals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
 .val{padding:clamp(28px,3vw,44px) clamp(16px,2vw,28px) clamp(28px,3vw,44px) 0;display:flex;flex-direction:column;gap:14px;border-right:1px solid var(--line);margin-right:clamp(16px,2vw,28px)}
 .val:last-child{border-right:0}
-.val h3{font-family:var(--f-serif);font-style:italic;font-size:clamp(30px,3vw,48px);font-weight:400}
+.val h3{font-size:clamp(26px,2.4vw,38px);font-weight:300;letter-spacing:-.03em}
 .val p{color:var(--fg-2);font-size:15px}
 .bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:clamp(24px,5vw,80px)}
 .bio .col{display:flex;flex-direction:column;gap:clamp(28px,3vw,44px)}
@@ -369,7 +369,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .art-banner{position:relative;height:clamp(240px,42vw,560px);border-radius:4px;overflow:hidden;margin-block:clamp(40px,5vw,72px)}
 .art-banner canvas{position:absolute;inset:0;width:100%;height:100%}
 .prose{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr) minmax(0,.6fr);gap:clamp(24px,4vw,64px)}
-.prose .lede{font-family:var(--f-serif);font-style:italic;font-size:clamp(24px,2.2vw,32px);line-height:1.2;color:var(--fg)}
+.prose .lede{font-family:var(--f-sans);font-weight:300;font-size:clamp(24px,2.2vw,32px);line-height:1.2;color:var(--fg)}
 .prose .body{max-width:68ch}
 .prose .body h2{font-size:clamp(26px,2.6vw,38px);font-weight:300;letter-spacing:-.03em;margin:56px 0 18px}
 .prose .body h2:first-child{margin-top:0}
@@ -584,14 +584,14 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
     </div>
   </section>
 
-  <section class="sec wrap" id="divisions">
+  <section class="sec tight wrap" id="divisions">
     <div class="dv-head" data-rv><span class="label">Our divisions</span></div>
     <a class="dv" href="https://vestriumglobal.com" target="_blank" rel="noopener" data-rv>
       <svg class="vm" viewBox="0 0 120 106" aria-hidden="true"><defs><linearGradient id="vchr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2F5FA"/><stop offset=".45" stop-color="#B9C0CC"/><stop offset=".55" stop-color="#7E8694"/><stop offset="1" stop-color="#C9CFD9"/></linearGradient></defs><path d="M4 6 L30 6 L58 72 L48 96 Z" fill="url(#vchr)"/><path d="M48 96 L58 72 L80 22 L94 22 L64 96 Z" fill="url(#vchr)"/><path d="M86 4 L116 4 L104 30 L92 30 Z" fill="url(#vchr)"/></svg>
       <div class="dv-grid">
         <div>
           <span class="dv-sub">A division of VIS10N Holdings</span>
-          <h2>Vestrium <em>Global</em></h2>
+          <h2>Vestrium Global</h2>
         </div>
         <div>
           <p class="dv-lede">A private business institution at the meeting point of sport and enterprise. Vestrium builds the companies, brands and partnerships that turn talent into ownership, for athletes and for the businesses and founders around them.</p>
@@ -601,7 +601,7 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
             <div><b>Personal brand</b><span>Positioning that outlasts the career</span></div>
             <div><b>Ventures</b><span>Ownership, not merely endorsement</span></div>
           </div>
-          <span class="btn" style="margin-top:32px">Visit vestriumglobal.com <svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></span>
+          <span class="btn" style="margin-top:28px">Visit vestriumglobal.com <svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></span>
         </div>
       </div>
     </a>
@@ -671,7 +671,7 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
   <section class="wrap fhero">
     <div>
       <span class="label">Leadership</span>
-      <h1 style="margin-top:28px"><span class="ln"><span>RayJ</span></span><span class="ln"><span><em>Dennis</em></span></span></h1>
+      <h1 style="margin-top:28px"><span class="ln"><span>RayJ</span></span><span class="ln"><span>Dennis</span></span></h1>
       <div class="role"><span>Founder and CEO, VIS10N</span><span>Atlanta Hawks · NBA</span></div>
     </div>
   </section>
