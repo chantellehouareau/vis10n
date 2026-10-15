@@ -330,6 +330,24 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .ft .who{margin-top:18px}
 @media (max-width:980px){.ft{grid-template-columns:auto minmax(0,1fr)!important}}
 @media (max-width:560px){.ft{grid-template-columns:minmax(0,1fr)!important}.ft .photo{width:120px}}
+.lmeta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)!important;align-self:end}
+.legal{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:clamp(32px,6vw,96px);padding-bottom:clamp(96px,12vw,180px)}
+.ltoc{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:16px}
+.ltoc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;counter-reset:l}
+.ltoc li{counter-increment:l}
+.ltoc a{display:flex;gap:12px;padding-block:6px;font-size:14px;color:var(--fg-2);transition:color .3s}
+.ltoc a::before{content:counter(l,decimal-leading-zero);font-family:var(--f-mono);font-size:11px;color:var(--mute);padding-top:3px}
+.ltoc a:hover{color:var(--gold)}
+.prose-l{max-width:68ch;display:flex;flex-direction:column}
+.prose-l section{padding-block:28px;border-top:1px solid var(--line);scroll-margin-top:110px}
+.prose-l h2{font-size:clamp(20px,1.8vw,26px);font-weight:300;letter-spacing:-.02em;margin-bottom:14px}
+.prose-l p{color:var(--fg-2);margin-bottom:12px}
+.prose-l ul{list-style:none;margin:4px 0 14px;padding:0;display:flex;flex-direction:column;gap:10px}
+.prose-l li{position:relative;padding-left:20px;color:var(--fg-2)}
+.prose-l li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.prose-l b{font-weight:400;color:var(--fg)}
+.prose-l .addr{color:var(--fg);user-select:all}
+@media (max-width:980px){.legal{grid-template-columns:minmax(0,1fr)}.ltoc{display:none}}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{padding:clamp(24px,3vw,40px) clamp(12px,2vw,28px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
 .stat:first-child{border-left:0;padding-left:0}
@@ -784,6 +802,32 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
   </section>
 </main>
 
+<!-- ======================= PRIVACY POLICY ======================= -->
+<main class="page" data-page="privacy">
+  <section class="wrap phero" style="padding-bottom:clamp(32px,4vw,56px)">
+    <span class="label">Legal</span>
+    <h1><span class="ln"><span>Privacy Policy</span></span></h1>
+    <div class="sub"><p>This policy explains what information VIS10N Holdings collects through vis10nholdings.com, how we use it, and the choices you have.</p><p class="lmeta">Last updated 14 October 2026</p></div>
+  </section>
+  <section class="wrap legal">
+    <nav class="ltoc" aria-label="Privacy Policy sections"><span class="label plain">Contents</span><ol><li><a href="#privacy" data-legal="privacy-0">Who we are</a></li><li><a href="#privacy" data-legal="privacy-1">Information we collect</a></li><li><a href="#privacy" data-legal="privacy-2">How we use it</a></li><li><a href="#privacy" data-legal="privacy-3">Cookies and analytics</a></li><li><a href="#privacy" data-legal="privacy-4">Service providers</a></li><li><a href="#privacy" data-legal="privacy-5">How long we keep it</a></li><li><a href="#privacy" data-legal="privacy-6">Your rights</a></li><li><a href="#privacy" data-legal="privacy-7">Security</a></li><li><a href="#privacy" data-legal="privacy-8">Children</a></li><li><a href="#privacy" data-legal="privacy-9">Changes to this policy</a></li><li><a href="#privacy" data-legal="privacy-10">Contact</a></li></ol></nav>
+    <div class="prose-l"><section id="privacy-0"><h2>Who we are</h2><p>VIS10N Holdings (“VIS10N”, “we”, “us”) is a global holding company operating across sport, media, marketing, technology and real estate. We are responsible for the personal information collected through this website.</p></section><section id="privacy-1"><h2>Information we collect</h2><p>We only collect information you choose to give us, and a small amount of technical information needed to run the site.</p><ul><li><b>Enquiries.</b> When you use the “Work with us” form we collect your name, email address, organisation, stage, enquiry type, sectors and your message.</li><li><b>Technical data.</b> Our hosting provider records standard server logs, such as IP address, browser type and the pages requested, to keep the site secure and working.</li><li><b>Information stored on your device.</b> Your browser keeps a note that you have seen the opening animation, and a draft of an unsent enquiry so you do not lose it. This stays on your device and is not sent to us.</li></ul></section><section id="privacy-2"><h2>How we use it</h2><ul><li>To read and respond to your enquiry and assess a potential partnership.</li><li>To operate, secure and improve the website.</li><li>To meet our legal and regulatory obligations.</li></ul><p>We do not sell your personal information, and we do not use it for automated decision-making or third-party advertising.</p></section><section id="privacy-3"><h2>Cookies and analytics</h2><p>This website does not use advertising cookies or analytics trackers. The only browser storage it uses is described above, and you can clear it at any time in your browser settings.</p></section><section id="privacy-4"><h2>Service providers</h2><p>We use trusted providers to run the site. They process data on our behalf and only as needed to provide their service:</p><ul><li><b>Netlify</b> hosts the website and receives form submissions.</li><li><b>Google Fonts</b> and <b>jsDelivr</b> deliver the site’s typefaces and a scrolling library, and may see your IP address when they do.</li><li>Our email provider receives the enquiry notifications we send to our team.</li></ul><p>Some of these providers may store data outside your country. Where they do, we rely on their contractual and legal safeguards.</p></section><section id="privacy-5"><h2>How long we keep it</h2><p>We keep enquiries for as long as needed to respond and to manage any resulting relationship, and generally no longer than three years after our last contact, unless the law requires otherwise.</p></section><section id="privacy-6"><h2>Your rights</h2><p>Depending on where you live, you may have the right to access, correct, delete or restrict the use of your personal information, to object to its use, or to receive a copy of it. To make a request, contact us using the details below. You may also have the right to complain to your local data protection authority.</p></section><section id="privacy-7"><h2>Security</h2><p>We use reasonable technical and organisational measures to protect your information. No method of transmission over the internet is completely secure, so we cannot guarantee absolute security.</p></section><section id="privacy-8"><h2>Children</h2><p>This website is not directed at children under 16, and we do not knowingly collect their personal information.</p></section><section id="privacy-9"><h2>Changes to this policy</h2><p>We may update this policy from time to time. The date at the top of the page shows when it was last changed.</p></section><section id="privacy-10"><h2>Contact</h2><p>For any question about this policy or your information, email <span class="addr">chantelle.houareau@vis10nholdings.com</span>.</p></section></div>
+  </section>
+</main>
+
+<!-- ======================= TERMS OF USE ======================= -->
+<main class="page" data-page="terms">
+  <section class="wrap phero" style="padding-bottom:clamp(32px,4vw,56px)">
+    <span class="label">Legal</span>
+    <h1><span class="ln"><span>Terms of Use</span></span></h1>
+    <div class="sub"><p>These terms govern your use of vis10nholdings.com. By using the website you agree to them.</p><p class="lmeta">Last updated 14 October 2026</p></div>
+  </section>
+  <section class="wrap legal">
+    <nav class="ltoc" aria-label="Terms of Use sections"><span class="label plain">Contents</span><ol><li><a href="#terms" data-legal="terms-0">About these terms</a></li><li><a href="#terms" data-legal="terms-1">Information only</a></li><li><a href="#terms" data-legal="terms-2">Enquiries</a></li><li><a href="#terms" data-legal="terms-3">Portfolio companies and divisions</a></li><li><a href="#terms" data-legal="terms-4">Intellectual property</a></li><li><a href="#terms" data-legal="terms-5">Acceptable use</a></li><li><a href="#terms" data-legal="terms-6">Third-party links</a></li><li><a href="#terms" data-legal="terms-7">No warranties</a></li><li><a href="#terms" data-legal="terms-8">Limitation of liability</a></li><li><a href="#terms" data-legal="terms-9">Changes</a></li><li><a href="#terms" data-legal="terms-10">Governing law</a></li><li><a href="#terms" data-legal="terms-11">Contact</a></li></ol></nav>
+    <div class="prose-l"><section id="terms-0"><h2>About these terms</h2><p>The website is operated by VIS10N Holdings (“VIS10N”, “we”, “us”). If you do not agree to these terms, please do not use the website.</p></section><section id="terms-1"><h2>Information only</h2><p>Content on this website, including the Insight articles, is provided for general information. It is not financial, investment, legal or tax advice, and it is not an offer or solicitation to buy or sell any security or interest. You should take your own professional advice before making any decision.</p></section><section id="terms-2"><h2>Enquiries</h2><p>Submitting an enquiry does not create any partnership, investment, client relationship or obligation on either side. Any engagement with VIS10N is subject to separate written agreement. Please do not send confidential information through the form.</p></section><section id="terms-3"><h2>Portfolio companies and divisions</h2><p>References to portfolio companies, partners and divisions, including Vestrium Global, describe our relationships for information. Each operates as its own business, and its products, services and statements are its own responsibility.</p></section><section id="terms-4"><h2>Intellectual property</h2><p>The VIS10N name, logo, website design, text and imagery are owned by or licensed to VIS10N. Company names and logos of our partners belong to their respective owners. You may view and share links to the website for personal, non-commercial use, but you may not copy, reproduce or reuse its content without our written permission.</p></section><section id="terms-5"><h2>Acceptable use</h2><p>You agree not to misuse the website, including by attempting to gain unauthorised access, interfering with its operation, submitting false or harmful information, or using automated tools to scrape its content.</p></section><section id="terms-6"><h2>Third-party links</h2><p>The website links to other sites, such as our partners’ websites and social media. We are not responsible for their content, availability or privacy practices.</p></section><section id="terms-7"><h2>No warranties</h2><p>The website is provided “as is”. We work to keep it accurate and available, but we do not guarantee that it will be error-free, complete, current or uninterrupted.</p></section><section id="terms-8"><h2>Limitation of liability</h2><p>To the fullest extent permitted by law, VIS10N is not liable for any loss or damage arising from your use of, or reliance on, the website or its content. Nothing in these terms limits liability that cannot be limited by law.</p></section><section id="terms-9"><h2>Changes</h2><p>We may update these terms at any time. The date at the top of the page shows when they were last changed, and continued use of the website means you accept the updated terms.</p></section><section id="terms-10"><h2>Governing law</h2><p>These terms are governed by the laws of the jurisdiction in which VIS10N Holdings is registered, and its courts have jurisdiction over any dispute.</p></section><section id="terms-11"><h2>Contact</h2><p>For any question about these terms, email <span class="addr">chantelle.houareau@vis10nholdings.com</span>.</p></section></div>
+  </section>
+</main>
+
 <footer>
   <div class="wrap">
     <div class="fgrid">
@@ -795,7 +839,7 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
       <div><h4>About</h4><ul><li><a href="#founder">Founder and CEO</a></li><li><a href="#insight">Insight</a></li></ul></div>
       <div><h4>Connect</h4><ul><li><a href="https://linkedin.com/company/vis10n" target="_blank" rel="noopener">LinkedIn<svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></a></li><li><a href="https://instagram.com/vis10nholdings" target="_blank" rel="noopener">Instagram<svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></a></li><li><button type="button" data-enquire style="color:var(--fg-2)">Contact</button></li></ul></div>
     </div>
-    <div class="fbot"><span>© 2026 VIS10N Holdings. All rights reserved.</span><span>Privacy Policy · Terms of Use</span><span>Designed and developed by <a href="https://reaustudio.com" target="_blank" rel="noopener">REAU Studio</a></span></div>
+    <div class="fbot"><span>© 2026 VIS10N Holdings. All rights reserved.</span><span><a href="#privacy">Privacy Policy</a> · <a href="#terms">Terms of Use</a></span><span>Designed and developed by <a href="https://reaustudio.com" target="_blank" rel="noopener">REAU Studio</a></span></div>
   </div>
 </footer>
 
@@ -1430,7 +1474,7 @@ let first = true;
 function parse(){
   const h = decodeURIComponent(location.hash.slice(1));
   if(!h || h==='home') return {page:'home'};
-  if(['portfolio','founder','insight'].includes(h)) return {page:h};
+  if(['portfolio','founder','insight','privacy','terms'].includes(h)) return {page:h};
   if(h.startsWith('post-')) return {page:'post', slug:h.slice(5)};
   if(h.startsWith('co-')) return {page:'portfolio', co:h};
   if(h==='enquire') return {page:cur||'home', enquire:true};
@@ -1438,7 +1482,7 @@ function parse(){
 }
 function show(r){
   if(r.page==='post' && !renderPost(r.slug)) r = {page:'insight'};
-  if(r.page!=='post') document.title = {home:'VIS10N Holdings', portfolio:'Portfolio · VIS10N', founder:'RayJ Dennis · VIS10N', insight:'Insight · VIS10N'}[r.page];
+  if(r.page!=='post') document.title = {home:'VIS10N Holdings', portfolio:'Portfolio · VIS10N', founder:'RayJ Dennis · VIS10N', insight:'Insight · VIS10N', privacy:'Privacy Policy · VIS10N', terms:'Terms of Use · VIS10N'}[r.page];
   cur = r.page;
   $$('main.page').forEach(m => m.classList.toggle('active', m.dataset.page===r.page));
   $$('.links .nl').forEach(a => a.classList.toggle('on', a.dataset.r===r.page || (r.page==='post' && a.dataset.r==='insight')));
@@ -1461,6 +1505,8 @@ function route(){
 }
 addEventListener('hashchange', route);
 document.addEventListener('click', e => {
+  const lg = e.target.closest('a[data-legal]');
+  if(lg){ e.preventDefault(); const el = document.getElementById(lg.dataset.legal); if(el) scrollToEl(el); return; }
   const a = e.target.closest('a[data-to]');
   if(a){ e.preventDefault(); const to = a.dataset.to; if(cur==='home'){ scrollToEl(document.getElementById(to)); } else { history.pushState(null,'','#home'); curtain.className='curtain in'; setTimeout(()=>{ show({page:'home', to}); curtain.className='curtain out'; setTimeout(()=>curtain.className='curtain',700); },560); } return; }
   const same = e.target.closest('a[href^="#"]');
