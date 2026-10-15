@@ -113,19 +113,19 @@ section{position:relative}
 .rv-go{transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
 
 /* ---------- HOME hero ---------- */
-.hero{min-height:max(640px,94svh);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-top:120px}
+.hero{height:100svh;min-height:540px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-top:calc(88px + env(safe-area-inset-top,0px))}
 #field{position:absolute;inset:0;width:100%;height:100%;z-index:0}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,7,8,.0) 40%,rgba(6,7,8,.85) 92%,var(--ink));z-index:0;pointer-events:none}
-.hero .inner{position:relative;z-index:2;padding-bottom:clamp(28px,4vw,48px)}
-.hero-kicker{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:clamp(20px,3vw,36px);flex-wrap:wrap}
-.hero h1{font-size:clamp(38px,6.2vw,108px);font-weight:200;letter-spacing:-.045em;line-height:.98}
+.hero .inner{position:relative;z-index:2;padding-bottom:clamp(24px,5svh,56px)}
+.hero-kicker{display:flex;justify-content:space-between;align-items:center;gap:12px 16px;margin-bottom:clamp(16px,3.4svh,36px);flex-wrap:wrap}
+.hero h1{font-size:clamp(34px,min(6.2vw,10.5svh),108px);font-weight:200;letter-spacing:-.045em;line-height:.98}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
 .hero h1 .ln>span{display:inline-block;animation:rise 1.4s var(--ease) both}
 .hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
 
 .hero h1 .tenbar{position:relative;display:inline-block}
 @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
-.hero-foot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:end;margin-top:clamp(32px,5vw,64px);padding-top:24px;border-top:1px solid var(--line)}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:end;margin-top:clamp(20px,5svh,64px);padding-top:clamp(16px,2.6svh,24px);border-top:1px solid var(--line)}
 .hero-foot p{color:var(--fg-2);max-width:44ch;font-size:clamp(15px,1.15vw,17px)}
 .scrollcue{display:flex;align-items:center;gap:12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
 .scrollcue .bar{width:1px;height:44px;background:var(--line-2);position:relative;overflow:hidden}
@@ -537,8 +537,8 @@ form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,5
         <div class="scrollcue"><span class="bar"></span>Scroll</div>
       </div>
     </div>
-    <div class="ticker" aria-hidden="true"><div class="tk"></div></div>
   </section>
+  <div class="ticker" aria-hidden="true"><div class="tk"></div></div>
 
   <section class="sec wrap">
     <div class="statement">
