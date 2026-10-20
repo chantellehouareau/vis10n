@@ -274,7 +274,9 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .co .hero-art h2{position:absolute;inset:0;font-size:clamp(56px,12vw,200px);font-weight:200;letter-spacing:-.06em;line-height:.88;display:flex;align-items:center;justify-content:center;pointer-events:none}
 .co .hero-art h2 .lg{height:calc(clamp(52px,7.4vw,112px) * var(--lh,1));max-height:min(200px,40%);max-width:min(70%,820px);width:auto;object-fit:contain;filter:drop-shadow(0 4px 30px rgba(6,7,8,.4))}
 .co .info{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr) minmax(0,.6fr);gap:clamp(20px,4vw,64px);margin-top:clamp(24px,3vw,40px)}
-.co .info .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(24px,2.4vw,36px);line-height:1.12}
+.co .info .nm{display:flex;flex-direction:column;gap:10px}
+.co .info h3{font-size:clamp(28px,2.8vw,44px);font-weight:300;letter-spacing:-.035em;line-height:1}
+.co .info .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(17px,1.4vw,21px);line-height:1.3;color:var(--fg-2)}
 .co .info p.d{color:var(--fg-2);max-width:60ch}
 .co dl{margin:0;display:flex;flex-direction:column;gap:14px;font-size:14px}
 .co dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
@@ -1252,7 +1254,7 @@ $('#coList').innerHTML = COS.map((co,i) => `
       <div class="over"><div class="top"><span class="label plain">${co.s}</span><span class="num">${String(i+1).padStart(2,'0')} / ${String(COS.length).padStart(2,'0')}</span></div><h2>${logoImg(co,'lg')}</h2></div>
     </div>
     <div class="info" data-rv>
-      <p class="lead">${co.lead}</p>
+      <div class="nm"><h3>${co.n}</h3><p class="lead">${co.lead}</p></div>
       <p class="d">${co.d}</p>
       <dl><div><dt>Sector</dt><dd>${co.s}</dd></div><div><dt>Focus</dt><dd>${co.focus}</dd></div></dl>
     </div>
