@@ -200,6 +200,9 @@ section{position:relative}
 .pcard .art .lg.txt{height:auto;white-space:nowrap;font-size:clamp(28px,2.8vw,44px);font-weight:300;letter-spacing:-.04em;line-height:1}
 .pcard .art .sx{position:absolute;left:22px;top:20px}
 .pcard .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--fg-2);font-size:14px}
+.pcard .mt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pcard .mt b{font-weight:400;font-size:clamp(17px,1.4vw,20px);letter-spacing:-.02em;color:var(--fg);transition:color .35s}
+.pcard:hover .mt b{color:var(--gold)}
 .pcard .meta .go{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .4s,color .4s}
 .pcard:hover .meta .go{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 .pcard.end .art{display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--ink-3);border:1px solid var(--line)}
@@ -1243,7 +1246,7 @@ const logoImg = (co, cls) => LOGOS[co.id] ? `<img class="${cls}" src="${LOGOS[co
 $('#track').innerHTML = COS.map(co => `
   <a class="pcard" href="#co-${co.id}">
     <div class="art"><canvas></canvas><span class="sx label plain">${co.s}</span>${logoImg(co,'lg')}</div>
-    <div class="meta"><span>${co.lead}</span><span class="go">${ARW}</span></div>
+    <div class="meta"><span class="mt"><b>${co.n}</b><span>${co.lead}</span></span><span class="go">${ARW}</span></div>
   </a>`).join('') + `
   <div class="pcard end"><div class="art"><span class="label">Your venture</span><div><h3>Building at the intersection of sport and culture?</h3><div style="margin-top:24px"><button class="btn gold" type="button" data-enquire>Enquire ${ARW}</button></div></div></div><div class="meta"><span>We are selective, and deliberate.</span></div></div>`;
 $$('#track .pcard:not(.end) canvas').forEach((cv,i) => art(cv, COS[i].seed, COS[i].v));
