@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="en" data-page="founder">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RayJ Dennis | Founder &amp; CEO, VIS10N Holdings</title>
+<meta name="description" content="RayJ Dennis is the Founder and CEO of VIS10N Holdings and a point guard for the Atlanta Hawks. From Boise State, Toledo and Baylor to the NBA, he builds from within the sports economy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout concept: a dark, cinematic editorial site. Full-bleed scenes, huge light-weight type,
+   scroll-lit statements, one pinned horizontal portfolio strip. Blue is the brand line; gold is a rare spark. */
+:root{
+  --ink:#060708;
+  --ink-2:#0b0d10;
+  --ink-3:#12151a;
+  --line:rgba(232,238,248,.10);
+  --line-2:rgba(232,238,248,.2);
+  --fg:#f8f8f8;
+  --fg-2:#b7bdc6;
+  --mute:#7a828d;
+  --blue:#5ca1f6;
+  --blue-soft:rgba(92,161,246,.18);
+  --gold:#ffde59;
+  --f-sans:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --gut:clamp(16px,4.2vw,64px);
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --ease-io:cubic-bezier(.76,0,.24,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--ink)}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--ink);color:var(--fg);font-family:var(--f-sans);font-weight:300;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+img{display:block;max-width:100%}
+::selection{background:var(--blue);color:var(--ink)}
+:focus-visible{outline:1px solid var(--blue);outline-offset:4px}
+h1,h2,h3,h4{font-weight:300;margin:0;text-wrap:balance;letter-spacing:-.025em;line-height:1.02}
+p{margin:0}
+em,.serif{font-style:normal;color:var(--fg-2)}
+.wrap{padding-inline:var(--gut);width:100%}
+.label{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:inline-flex;align-items:center;gap:10px}
+.label::before{content:"";width:18px;height:1px;background:var(--blue)}
+.label.plain::before{display:none}
+
+/* ---------- grain + aura (background that moves) ---------- */
+.aura{position:fixed;inset:-20vmax;z-index:0;pointer-events:none;will-change:transform}
+.aura i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.aura .a1{width:52vmax;height:52vmax;background:radial-gradient(circle,rgba(92,161,246,.30),transparent 62%);left:45%;top:10%}
+.aura .a2{width:40vmax;height:40vmax;background:radial-gradient(circle,rgba(92,161,246,.14),transparent 60%);left:5%;top:55%}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- intro ---------- */
+#intro{position:fixed;inset:0;z-index:100;background:var(--ink);display:grid;place-items:center;transition:transform 1.1s var(--ease-io)}
+#intro .lw{position:relative;width:min(62vw,560px)}
+#intro img{width:100%;clip-path:inset(0 100% 0 0);animation:wipe 1.1s var(--ease-io) .15s forwards}
+#intro .count{position:absolute;left:0;right:0;bottom:-48px;display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute)}
+#intro.out{transform:translateY(-100%)}
+#intro.gone{display:none}
+@keyframes wipe{to{clip-path:inset(0 0 0 0)}}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;left:0;right:0;top:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .5s,backdrop-filter .5s,border-color .5s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(6,7,8,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom-color:var(--line)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{height:22px;width:auto}
+.links{display:flex;align-items:center;gap:clamp(18px,2.6vw,40px)}
+.links a.nl{font-size:14px;color:var(--fg-2);position:relative;padding-block:6px;transition:color .3s}
+.links a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.links a.nl:hover,.links a.nl.on{color:var(--fg)}
+.links a.nl:hover::after,.links a.nl.on::after{transform:scaleX(1);transform-origin:left}
+.links a.nl.on::after{background:var(--blue)}
+.mmenu a.big{transition:color .35s}.mmenu a.big:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:12px;height:46px;padding-inline:22px;border:1px solid var(--line-2);border-radius:999px;font-size:14px;font-weight:400;letter-spacing:.01em;position:relative;overflow:hidden;isolation:isolate;transition:color .45s var(--ease),border-color .45s}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold);transform:translateY(101%);transition:transform .55s var(--ease);z-index:-1;border-radius:inherit}
+.btn:hover{color:var(--ink);border-color:var(--gold)}
+.btn:hover::before{transform:translateY(0)}
+.btn.solid{background:var(--fg);color:var(--ink);border-color:var(--fg)}
+.btn .ar{width:14px;height:14px;transition:transform .45s var(--ease)}
+.btn:hover .ar{transform:translateX(3px)}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line-2);border-radius:50%;position:relative}
+.burger i{position:absolute;left:14px;right:14px;height:1px;background:var(--fg);transition:transform .4s var(--ease)}
+.burger i:first-child{top:19px}.burger i:last-child{top:26px}
+body.menu .burger i:first-child{transform:translateY(3.5px) rotate(45deg)}
+body.menu .burger i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+.mmenu{position:fixed;inset:0;z-index:45;background:var(--ink);padding:calc(110px + env(safe-area-inset-top,0px)) var(--gut) 40px;display:flex;flex-direction:column;justify-content:space-between;clip-path:inset(0 0 100% 0);transition:clip-path .7s var(--ease-io)}
+body.menu .mmenu{clip-path:inset(0 0 0 0)}
+.mmenu a.big{display:block;font-size:clamp(40px,11vw,72px);letter-spacing:-.04em;line-height:1.08;padding-block:6px;border-bottom:1px solid var(--line)}
+.mmenu .foot{font-family:var(--f-mono);font-size:12px;color:var(--mute);letter-spacing:.08em;display:flex;flex-direction:column;gap:6px;margin-top:32px}
+
+/* ---------- page system ---------- */
+main.page{position:relative;z-index:1;display:none}
+main.page.active{display:block}
+.curtain{position:fixed;inset:0;z-index:70;background:var(--ink-2);transform:translateY(100%);pointer-events:none;display:grid;place-items:center}
+.curtain img{width:44px;opacity:.9}
+.curtain.hold{transform:translateY(0)}
+.curtain.in{transition:transform .55s var(--ease-io);transform:translateY(0)}
+.curtain.out{transition:transform .65s var(--ease-io);transform:translateY(-100%)}
+
+section{position:relative}
+.sec{padding-block:clamp(96px,14vw,200px)}
+.sec.tight{padding-block:clamp(72px,9vw,128px)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* reveal: elements below the fold start lowered, everything above is untouched */
+.rv-pending{opacity:0;transform:translateY(34px)}
+.rv-go{transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+
+/* ---------- HOME hero ---------- */
+.hero{height:100svh;min-height:540px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-top:calc(88px + env(safe-area-inset-top,0px))}
+#field{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,7,8,.0) 40%,rgba(6,7,8,.85) 92%,var(--ink));z-index:0;pointer-events:none}
+.hero .inner{position:relative;z-index:2;padding-bottom:clamp(24px,5svh,56px)}
+.hero-kicker{display:flex;justify-content:space-between;align-items:center;gap:12px 16px;margin-bottom:clamp(16px,3.4svh,36px);flex-wrap:wrap}
+.hero h1{font-size:clamp(34px,min(6.2vw,10.5svh),108px);font-weight:200;letter-spacing:-.045em;line-height:.98}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:inline-block;animation:rise 1.4s var(--ease) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
+
+.hero h1 .tenbar{position:relative;display:inline-block}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:end;margin-top:clamp(20px,5svh,64px);padding-top:clamp(16px,2.6svh,24px);border-top:1px solid var(--line)}
+.hero-foot p{color:var(--fg-2);max-width:44ch;font-size:clamp(15px,1.15vw,17px)}
+.scrollcue{display:flex;align-items:center;gap:12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.scrollcue .bar{width:1px;height:44px;background:var(--line-2);position:relative;overflow:hidden}
+.scrollcue .bar::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--blue);animation:drip 2.2s var(--ease-io) infinite}
+@keyframes drip{to{top:110%}}
+.ticker{position:relative;z-index:2;border-top:1px solid var(--line);overflow:hidden;white-space:nowrap;padding-block:16px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker .tk{display:inline-flex;gap:48px;animation:tick 38s linear infinite;font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-2)}
+.ticker .tk span{display:inline-flex;align-items:center;gap:48px}
+.ticker .tk span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- scroll-lit statement ---------- */
+.lit{font-size:clamp(28px,4.4vw,72px);font-weight:300;letter-spacing:-.035em;line-height:1.08;max-width:22ch}
+.lit.sm{font-size:clamp(24px,3.1vw,48px);max-width:30ch;line-height:1.16}
+.lit .w{opacity:.14;transition:opacity .25s linear}
+.lit .w.k{color:var(--blue)}
+.statement{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:clamp(24px,5vw,80px)}
+.statement .side{display:flex;flex-direction:column;gap:20px;padding-top:12px}
+.statement .side p{color:var(--mute);font-size:14px;max-width:28ch}
+
+/* ---------- convictions ---------- */
+.conv-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,80px)}
+.conv-head h2{font-size:clamp(36px,5.6vw,92px);font-weight:200}
+.conv-head p{color:var(--fg-2);max-width:40ch}
+.conv{border-top:1px solid var(--line)}
+.ci{border-bottom:1px solid var(--line);position:relative}
+.ci::before{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease)}
+.ci.open::before{transform:scaleX(1)}
+.ci button{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;width:100%;text-align:left;padding-block:clamp(22px,2.6vw,36px)}
+.ci .nm{font-size:clamp(32px,5vw,84px);font-weight:200;letter-spacing:-.045em;line-height:1;transition:transform .7s var(--ease),color .5s}
+.ci:hover .nm{transform:translateX(clamp(8px,1.4vw,22px));color:var(--gold)}
+.ci:hover .pm{border-color:var(--gold)}
+.ci .pm{width:44px;height:44px;border:1px solid var(--line-2);border-radius:50%;position:relative;flex:none;transition:background .4s,border-color .4s}
+.ci .pm::before,.ci .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1px;background:var(--fg);transform:translate(-50%,-50%);transition:transform .5s var(--ease)}
+.ci .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.ci.open .pm{background:var(--gold);border-color:var(--gold)}
+.ci.open .pm::before,.ci.open .pm::after{background:var(--ink)}
+.ci.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.ci .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .8s var(--ease)}
+.ci.open .body{grid-template-rows:1fr}
+.ci .body>div{overflow:hidden}
+.ci .body .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(20px,4vw,64px);padding-bottom:clamp(28px,3vw,44px)}
+.ci .body .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(22px,2.2vw,32px);line-height:1.2;color:var(--fg)}
+.ci .body p.d{color:var(--fg-2);max-width:62ch}
+
+/* ---------- model grid ---------- */
+.model{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(32px,6vw,96px)}
+.model .stick{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:24px}
+.model h2{font-size:clamp(38px,5vw,80px);font-weight:200}
+.model .stick p{color:var(--fg-2);max-width:40ch}
+.caps{display:flex;flex-direction:column}
+.cap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:24px;padding-block:32px;border-top:1px solid var(--line)}
+.cap:last-child{border-bottom:1px solid var(--line)}
+.cap h3{font-size:clamp(20px,1.8vw,26px);font-weight:400;letter-spacing:-.02em}
+.cap p{color:var(--fg-2);font-size:15px}
+
+/* ---------- pinned horizontal playbook ---------- */
+.hpin{position:relative}
+.hpin .sticky{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(24px,4vh,48px)}
+.hpin .top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.hpin h2{font-size:clamp(38px,5.4vw,88px);font-weight:200}
+.hpin .prog{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--mute);display:flex;align-items:center;gap:14px}
+.hpin .prog .pb{width:120px;height:1px;background:var(--line-2);position:relative}
+.hpin .prog .pb i{position:absolute;left:0;top:0;bottom:0;background:var(--blue);width:0}
+.track{display:flex;gap:clamp(16px,1.8vw,28px);padding-inline:var(--gut);will-change:transform;width:max-content}
+.pcard{width:clamp(270px,30vw,460px);flex:none;display:flex;flex-direction:column;gap:16px}
+.pcard .art{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:4px;overflow:hidden;background:var(--ink-2)}
+.pcard .art canvas{position:absolute;inset:0;width:100%;height:100%;transition:transform 1.4s var(--ease)}
+.pcard:hover .art canvas{transform:scale(1.05)}
+.pcard .art .lg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:calc(clamp(30px,2.8vw,42px) * var(--lh,1));max-height:76px;max-width:calc(100% - 48px);width:auto;object-fit:contain;filter:drop-shadow(0 2px 18px rgba(6,7,8,.35))}
+.co .hero-art h2 .lg.txt{height:auto;max-height:none;max-width:none;filter:none}
+.pcard .art .lg.txt{height:auto;white-space:nowrap;font-size:clamp(28px,2.8vw,44px);font-weight:300;letter-spacing:-.04em;line-height:1}
+.pcard .art .sx{position:absolute;left:22px;top:20px}
+.pcard .meta{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--fg-2);font-size:14px}
+.pcard .mt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pcard .mt b{font-weight:400;font-size:clamp(17px,1.4vw,20px);letter-spacing:-.02em;color:var(--fg);transition:color .35s}
+.pcard:hover .mt b{color:var(--gold)}
+.pcard .meta .go{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .4s,color .4s}
+.pcard:hover .meta .go{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.pcard.end .art{display:flex;flex-direction:column;justify-content:space-between;padding:28px;background:var(--ink-3);border:1px solid var(--line)}
+.pcard.end h3{font-size:clamp(28px,2.6vw,40px);font-weight:200}
+
+/* ---------- founder teaser ---------- */
+.ft{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.photo{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/5;max-width:100%;background:var(--ink-2)}
+.photo img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:52% 14%;filter:contrast(1.04) brightness(.92)}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(6,7,8,.6))}
+.photo .cap2{position:absolute;left:20px;bottom:18px;z-index:2}
+.ft blockquote{margin:0;font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1.08;letter-spacing:-.035em}
+.ft .who{display:flex;flex-direction:column;gap:4px;margin-top:32px}
+.ft .who b{font-weight:400}
+.ft .who span{color:var(--mute);font-size:14px}
+
+/* ---------- insight rows ---------- */
+.ins-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,64px)}
+.ins-head h2{font-size:clamp(38px,5.4vw,88px);font-weight:200}
+.irows{border-top:1px solid var(--line)}
+.irow{display:grid;grid-template-columns:140px minmax(0,1fr) minmax(0,.55fr) 44px;gap:clamp(16px,3vw,48px);align-items:center;padding-block:clamp(22px,2.6vw,34px);border-bottom:1px solid var(--line);position:relative;transition:padding .6s var(--ease)}
+.irow .dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--mute);font-variant-numeric:tabular-nums}
+.irow h3{font-size:clamp(20px,2.1vw,32px);font-weight:300;letter-spacing:-.03em;line-height:1.15;transition:color .4s}
+.irow .tags{font-size:13px;color:var(--mute)}
+.irow .go{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .4s,color .4s,transform .6s var(--ease)}
+.irow:hover .go{background:var(--gold);border-color:var(--gold);color:var(--ink);transform:rotate(-45deg)}
+.irow:hover h3{color:var(--fg)}
+.irows:hover .irow:not(:hover) h3{color:var(--mute)}
+.peek{position:fixed;left:0;top:0;width:260px;aspect-ratio:4/3;z-index:40;pointer-events:none;border-radius:4px;overflow:hidden;opacity:0;transform:translate(-50%,-50%) scale(.85);transition:opacity .35s,transform .5s var(--ease)}
+.peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.peek canvas{width:100%;height:100%;display:block}
+
+/* ---------- CTA ---------- */
+.cta{text-align:left;overflow:hidden}
+.cta .huge{font-size:clamp(38px,5.8vw,100px);font-weight:200;letter-spacing:-.045em;line-height:.98}
+.cta .row2{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-top:clamp(32px,5vw,64px)}
+.cta .row2 p{color:var(--fg-2);max-width:46ch}
+
+/* ---------- footer ---------- */
+footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-block:clamp(56px,7vw,96px) 32px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,64px)}
+.fgrid h4{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:18px;font-weight:400}
+.fgrid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.fgrid a{color:var(--fg-2);transition:color .3s}
+.fgrid a:hover,.fgrid button:hover{color:var(--gold)!important}
+.fbrand img{width:min(320px,70%)}
+.fbrand p{color:var(--mute);margin-top:24px;max-width:36ch;font-size:14px}
+.fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(48px,6vw,88px);padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mute)}
+.fbot a{color:var(--fg-2);transition:color .3s}
+.fbot a:hover{color:var(--gold)}
+.ext{display:inline-block;margin-left:7px;vertical-align:1px;color:var(--fg);transition:color .3s}
+.fgrid a:hover .ext,.prose .share a:hover .ext{color:var(--gold)}
+
+/* ---------- inner page heroes ---------- */
+.phero{padding-top:clamp(150px,18vw,240px);padding-bottom:clamp(56px,7vw,104px)}
+.phero h1{font-size:clamp(44px,7vw,120px);font-weight:200;letter-spacing:-.05em;line-height:.95;margin-top:28px}
+.phero h1 .ln{display:block;overflow:hidden;padding-bottom:.05em}
+.phero h1 .ln>span{display:inline-block;animation:rise 1.3s var(--ease) both}
+.phero h1 .ln:nth-child(2)>span{animation-delay:.1s}
+.phero .sub{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(24px,5vw,80px);margin-top:clamp(40px,5vw,72px);padding-top:28px;border-top:1px solid var(--line)}
+.phero .sub p{color:var(--fg-2);max-width:56ch}
+.phero .sub ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}
+.phero .sub li{padding-block:12px;border-bottom:1px solid var(--line);color:var(--fg-2);display:flex;gap:14px;align-items:baseline}
+.phero .sub li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;transform:translateY(-2px)}
+
+/* ---------- portfolio companies ---------- */
+.co{padding-block:clamp(40px,5vw,72px);border-top:1px solid var(--line)}
+.co .hero-art{position:relative;height:clamp(300px,52vw,720px);border-radius:4px;overflow:hidden;background:var(--ink-2)}
+.co .hero-art canvas{position:absolute;left:0;top:-10%;width:100%;height:120%}
+.co .hero-art .over{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,3vw,40px);background:linear-gradient(180deg,rgba(6,7,8,.0) 40%,rgba(6,7,8,.55))}
+.co .hero-art .over .top{display:flex;justify-content:space-between;gap:16px}
+.co .hero-art h2{position:absolute;inset:0;font-size:clamp(56px,12vw,200px);font-weight:200;letter-spacing:-.06em;line-height:.88;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.co .hero-art h2 .lg{height:calc(clamp(52px,7.4vw,112px) * var(--lh,1));max-height:min(200px,40%);max-width:min(70%,820px);width:auto;object-fit:contain;filter:drop-shadow(0 4px 30px rgba(6,7,8,.4))}
+.co .info{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr) minmax(0,.6fr);gap:clamp(20px,4vw,64px);margin-top:clamp(24px,3vw,40px)}
+.co .info .nm{display:flex;flex-direction:column;gap:10px}
+.co .info h3{font-size:clamp(28px,2.8vw,44px);font-weight:300;letter-spacing:-.035em;line-height:1}
+.co .info .lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(17px,1.4vw,21px);line-height:1.3;color:var(--fg-2)}
+.co .info p.d{color:var(--fg-2);max-width:60ch}
+.co dl{margin:0;display:flex;flex-direction:column;gap:14px;font-size:14px}
+.co dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.co dd{margin:2px 0 0;color:var(--fg-2)}
+.co .num{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--fg-2)}
+
+.build{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:end}
+.build h2{font-size:clamp(34px,4.6vw,80px);font-weight:200;letter-spacing:-.045em;line-height:1}
+.build p{color:var(--fg-2);max-width:48ch}
+.build .acts{display:flex;flex-direction:column;gap:28px;align-items:flex-start}
+
+/* ---------- founder page ---------- */
+.fhero{padding-top:clamp(130px,14vw,190px);padding-bottom:clamp(40px,5vw,72px)}
+.fhero h1{font-size:clamp(48px,8.4vw,148px);font-weight:200;letter-spacing:-.055em;line-height:.9}
+.fhero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.fhero h1 .ln>span{display:inline-block;animation:rise 1.3s var(--ease) both}
+.fhero h1 .ln:nth-child(2)>span{animation-delay:.1s}
+.fhero .role{display:flex;justify-content:space-between;gap:16px;margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-2);flex-wrap:wrap}
+.fsplit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.gal{position:sticky;top:calc(96px + env(safe-area-inset-top,0px));height:calc(100svh - 136px);max-height:920px;min-height:420px;border-radius:4px;overflow:hidden;background:var(--ink-2)}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.1s var(--ease),transform 1.8s var(--ease)}
+.gal img.on{opacity:1;transform:scale(1)}
+.gal::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(6,7,8,.72));pointer-events:none}
+.gal .gcap{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.gal .gnum{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--fg);font-variant-numeric:tabular-nums}
+.fsteps{display:flex;flex-direction:column}
+.fstep{min-height:80svh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding-block:6vh}
+.dv-head{margin-bottom:clamp(24px,3vw,40px)}
+.dv{position:relative;display:block;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:radial-gradient(90% 120% at 100% 0%,rgba(92,161,246,.10),transparent 60%),var(--ink-2);padding:clamp(24px,3.4vw,48px);transition:border-color .5s}
+.dv::before{content:"";position:absolute;left:0;top:0;height:1px;width:100%;background:var(--fg);box-shadow:0 0 14px rgba(248,248,248,.35);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease)}
+.dv:hover{border-color:var(--line-2)}
+.dv:hover::before{transform:scaleX(1)}
+.dv .vm{display:block;width:clamp(44px,4vw,60px);height:auto;margin-top:clamp(20px,2.4vw,32px);opacity:.85;transition:opacity .6s}
+.dv:hover .vm{opacity:1}
+.dv-grid{position:relative;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:start}
+.dv h2{font-size:clamp(26px,2.8vw,42px);font-weight:300;letter-spacing:.06em;text-transform:uppercase;line-height:1.05;margin-top:16px}
+.dv-sub{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.dv-lede{color:var(--fg-2);max-width:52ch}
+.disc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px;margin-top:28px;border-top:1px solid var(--line)}
+.disc div{padding:16px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.disc b{font-weight:400;color:var(--fg)}
+.disc span{color:var(--mute);font-size:13.5px}
+.dv:hover .btn{color:var(--ink);border-color:var(--gold)}
+.dv:hover .btn::before{transform:translateY(0)}
+.dv .btn .ext{color:currentColor}
+@media (max-width:980px){.dv-grid{grid-template-columns:minmax(0,1fr);gap:20px}}
+@media (max-width:480px){.disc{grid-template-columns:minmax(0,1fr)}}
+.ft{grid-template-columns:auto minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,64px);padding-block:clamp(24px,3vw,40px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ft .photo{width:clamp(120px,14vw,200px);aspect-ratio:4/5}
+.ft .photo img{top:0;height:100%;object-position:52% 14%}
+.ft .photo::after{display:none}
+.ft blockquote{font-size:clamp(20px,2vw,30px)!important;line-height:1.2!important;max-width:30ch}
+.ft .who{margin-top:18px}
+@media (max-width:980px){.ft{grid-template-columns:auto minmax(0,1fr)!important}}
+@media (max-width:560px){.ft{grid-template-columns:minmax(0,1fr)!important}.ft .photo{width:120px}}
+.lmeta{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)!important;align-self:end}
+.legal{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:clamp(32px,6vw,96px);padding-bottom:clamp(96px,12vw,180px)}
+.ltoc{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:16px}
+.ltoc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;counter-reset:l}
+.ltoc li{counter-increment:l}
+.ltoc a{display:flex;gap:12px;padding-block:6px;font-size:14px;color:var(--fg-2);transition:color .3s}
+.ltoc a::before{content:counter(l,decimal-leading-zero);font-family:var(--f-mono);font-size:11px;color:var(--mute);padding-top:3px}
+.ltoc a:hover{color:var(--gold)}
+.prose-l{max-width:68ch;display:flex;flex-direction:column}
+.prose-l section{padding-block:28px;border-top:1px solid var(--line);scroll-margin-top:110px}
+.prose-l h2{font-size:clamp(20px,1.8vw,26px);font-weight:300;letter-spacing:-.02em;margin-bottom:14px}
+.prose-l p{color:var(--fg-2);margin-bottom:12px}
+.prose-l ul{list-style:none;margin:4px 0 14px;padding:0;display:flex;flex-direction:column;gap:10px}
+.prose-l li{position:relative;padding-left:20px;color:var(--fg-2)}
+.prose-l li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.prose-l b{font-weight:400;color:var(--fg)}
+.prose-l .addr{color:var(--fg);user-select:all}
+@media (max-width:980px){.legal{grid-template-columns:minmax(0,1fr)}.ltoc{display:none}}
+.fintro{margin-top:24px;max-width:58ch;color:var(--fg-2);font-size:clamp(16px,1.3vw,19px)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:clamp(24px,3vw,40px) clamp(12px,2vw,28px);border-left:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{font-size:clamp(36px,4.4vw,72px);font-weight:200;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{color:var(--fg-2);font-size:14px;max-width:24ch}
+.path{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(32px,6vw,96px)}
+.path h2{font-size:clamp(38px,5vw,80px);font-weight:200}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:1px;background:var(--line)}
+.tl .fill{position:absolute;left:7px;top:10px;width:1px;background:var(--blue);height:0}
+.tl li{position:relative;padding:0 0 clamp(36px,4vw,56px) 44px}
+.tl li::before{content:"";position:absolute;left:3px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--fg-2)}
+.tl li.on::before{background:var(--blue);border-color:var(--blue)}
+.tl .yr{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--blue);font-variant-numeric:tabular-nums}
+.tl h3{font-size:clamp(24px,2.6vw,40px);font-weight:300;letter-spacing:-.035em;margin-top:6px}
+.tl p{color:var(--fg-2);max-width:56ch;margin-top:10px}
+.vals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.val{padding:clamp(28px,3vw,44px) clamp(16px,2vw,28px) clamp(28px,3vw,44px) 0;display:flex;flex-direction:column;gap:14px;border-right:1px solid var(--line);margin-right:clamp(16px,2vw,28px)}
+.val:last-child{border-right:0}
+.val h3{font-size:clamp(26px,2.4vw,38px);font-weight:300;letter-spacing:-.03em}
+.val p{color:var(--fg-2);font-size:15px}
+.bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:clamp(24px,5vw,80px)}
+.bio .col{display:flex;flex-direction:column;gap:clamp(28px,3vw,44px)}
+
+/* ---------- insight page ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(32px,4vw,56px)}
+.chip{height:38px;padding-inline:18px;border-radius:999px;border:1px solid var(--line-2);font-size:13.5px;color:var(--fg-2);transition:all .35s var(--ease)}
+.chip:hover{color:var(--gold);border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.feat{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end;margin-bottom:clamp(48px,6vw,96px)}
+.feat .art{position:relative;aspect-ratio:16/11;max-width:100%;overflow:hidden;border-radius:4px}
+.feat .art canvas{position:absolute;inset:0;width:100%;height:100%;transition:transform 1.4s var(--ease)}
+.feat:hover .art canvas{transform:scale(1.04)}
+.feat h2{font-size:clamp(32px,3.6vw,60px);font-weight:300;letter-spacing:-.04em;line-height:1.04;margin-block:18px}
+.feat p{color:var(--fg-2);max-width:48ch}
+.feat .meta{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
+.empty{padding-block:48px;color:var(--mute)}
+
+/* article */
+.art-hero{padding-top:clamp(140px,15vw,200px)}
+.art-hero .back{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--fg-2);margin-bottom:40px}
+.art-hero .back:hover{color:var(--gold)}
+.art-hero h1{font-size:clamp(40px,6.4vw,104px);font-weight:200;letter-spacing:-.05em;line-height:.96;max-width:18ch}
+.art-hero .meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--fg-2);text-transform:uppercase}
+.art-banner{position:relative;height:clamp(240px,42vw,560px);border-radius:4px;overflow:hidden;margin-block:clamp(40px,5vw,72px)}
+.art-banner canvas{position:absolute;inset:0;width:100%;height:100%}
+.prose{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr) minmax(0,.6fr);gap:clamp(24px,4vw,64px)}
+.prose .lede{font-family:var(--f-sans);font-weight:300;font-size:clamp(24px,2.2vw,32px);line-height:1.2;color:var(--fg)}
+.prose .body{max-width:68ch}
+.prose .body h2{font-size:clamp(26px,2.6vw,38px);font-weight:300;letter-spacing:-.03em;margin:56px 0 18px}
+.prose .body h2:first-child{margin-top:0}
+.prose .body p{color:var(--fg-2);font-size:17.5px;line-height:1.75;margin-bottom:18px}
+.prose .body ul{margin:0 0 22px;padding:0;list-style:none;border-top:1px solid var(--line)}
+.prose .body li{padding-block:12px;border-bottom:1px solid var(--line);color:var(--fg);display:flex;gap:14px;align-items:baseline}
+.prose .body li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;transform:translateY(-2px)}
+.prose .share{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:12px;font-size:13px;color:var(--mute)}
+.prose .share button{text-align:left;color:var(--fg-2)}
+.prose .share button:hover,.prose .share a:hover{color:var(--gold)}
+.readbar{position:fixed;left:0;top:0;height:2px;background:var(--blue);z-index:55;width:0}
+
+/* ---------- enquiry modal ---------- */
+.modal{position:fixed;inset:0;z-index:80;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,min(720px,100%));visibility:hidden}
+.modal.open{visibility:visible}
+.modal .scrim{background:rgba(6,7,8,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .6s}
+.modal.open .scrim{opacity:1}
+.modal .panel{background:var(--ink-2);border-left:1px solid var(--line);transform:translateX(100%);transition:transform .8s var(--ease-io);overflow-y:auto;overscroll-behavior:contain;padding:calc(28px + env(safe-area-inset-top,0px)) clamp(20px,4vw,56px) calc(40px + env(safe-area-inset-bottom,0px))}
+.modal.open .panel{transform:none}
+.modal .ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:clamp(36px,5vw,64px)}
+.modal .x{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);position:relative;transition:transform .5s var(--ease)}
+.modal .x:hover{transform:rotate(90deg);border-color:var(--gold)}
+.modal .x::before,.modal .x::after{content:"";position:absolute;left:15px;right:15px;top:50%;height:1px;background:var(--fg);transform:rotate(45deg)}
+.modal .x::after{transform:rotate(-45deg)}
+.modal h2{font-size:clamp(40px,5.4vw,76px);font-weight:200;letter-spacing:-.05em;line-height:.95}
+.modal .intro{color:var(--fg-2);margin-top:20px;max-width:48ch}
+form.enq{display:flex;flex-direction:column;gap:30px;margin-top:clamp(36px,5vw,56px)}
+.fld{display:flex;flex-direction:column;gap:6px;position:relative}
+.fld label,.fld .lg{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.fld input,.fld textarea,.fld select{background:transparent;border:0;border-bottom:1px solid var(--line-2);color:var(--fg);font:inherit;font-size:18px;font-weight:300;padding:10px 0 12px;border-radius:0;outline:none;transition:border-color .4s;width:100%}
+.fld select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--fg-2) 50%),linear-gradient(135deg,var(--fg-2) 50%,transparent 50%);background-position:calc(100% - 12px) 22px,calc(100% - 7px) 22px;background-size:5px 5px;background-repeat:no-repeat}
+.fld select option{background:var(--ink-2);color:var(--fg)}
+.fld textarea{resize:vertical;min-height:110px}
+.fld input:focus,.fld textarea:focus,.fld select:focus{border-bottom-color:var(--blue)}
+.fld .err{font-size:12.5px;color:#ff8f7a;min-height:0}
+.fld.bad input,.fld.bad textarea{border-bottom-color:#ff8f7a}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{font-family:var(--f-sans);text-transform:none;letter-spacing:0;font-size:14px;color:var(--fg-2);height:40px;padding-inline:18px;border-radius:999px;border:1px solid var(--line-2);display:inline-flex;align-items:center;cursor:pointer;transition:all .35s var(--ease)}
+.opts label:hover{color:var(--gold);border-color:var(--gold)}
+.opts input:checked+label{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.opts input:focus-visible+label{outline:1px solid var(--blue);outline-offset:3px}
+.fnote{font-size:13px;color:var(--mute);display:flex;flex-direction:column;gap:4px}
+.fnote .addr{color:var(--fg-2);user-select:all}
+.sent{display:none;flex-direction:column;gap:20px;margin-top:48px}
+.sent.on{display:flex}
+.sent h3{font-size:clamp(32px,3.6vw,52px);font-weight:200}
+.sent p{color:var(--fg-2);max-width:48ch}
+
+/* ---------- cursor ---------- */
+.cur{position:fixed;left:0;top:0;width:8px;height:8px;margin:-4px 0 0 -4px;border:1px solid var(--blue);background:var(--blue);border-radius:50%;z-index:90;pointer-events:none;transition:width .35s var(--ease),height .35s var(--ease),margin .35s var(--ease),background .35s;display:none}
+.cur.big{width:26px;height:26px;margin:-13px 0 0 -13px;background:rgba(92,161,246,.12)}
+@media (pointer:fine){.cur{display:block}}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .links .nl,.links .btn{display:none}
+  .burger{display:block}
+  .hero-foot{grid-template-columns:minmax(0,1fr)}
+  .statement,.model,.ft,.path,.bio,.build,.feat,.fhero,.phero .sub,.fsplit{grid-template-columns:minmax(0,1fr)}
+  .fsplit{gap:0}
+  .gal{top:calc(84px + env(safe-area-inset-top,0px));height:54svh;min-height:300px;z-index:3;box-shadow:0 -120px 0 0 var(--ink),0 24px 40px -10px var(--ink)}
+  .fstep{min-height:58svh;padding-block:32px}
+  .model .stick{position:static}
+  .ci .body .in{grid-template-columns:minmax(0,1fr)}
+  .co .info{grid-template-columns:minmax(0,1fr)}
+  .prose{grid-template-columns:minmax(0,1fr)}
+  .prose .share{position:static;flex-direction:row;flex-wrap:wrap;gap:20px}
+  .fgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .fbrand{grid-column:1/-1}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .vals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .val:nth-child(2){border-right:0}
+  .irow{grid-template-columns:minmax(0,1fr) 44px}
+  .irow .dt{grid-column:1/-1}
+  .irow .tags{display:none}
+  .modal{grid-template-columns:0 minmax(0,1fr)}
+}
+@media (max-width:640px){
+  .cap{grid-template-columns:minmax(0,1fr);gap:8px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .vals{grid-template-columns:minmax(0,1fr)}
+  .val{border-right:0;border-bottom:1px solid var(--line);margin-right:0}
+  .fgrid{grid-template-columns:minmax(0,1fr)}
+  .hpin .sticky{height:auto;position:relative;padding-block:96px}
+  .track{transform:none!important;overflow-x:auto;width:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+  .pcard{width:78vw;scroll-snap-align:start}
+}
+@media (max-width:640px){
+  .nav .row{height:64px}
+  .brand img{height:18px}
+  .burger{width:40px;height:40px}
+  .burger i{left:12px;right:12px}
+  .burger i:first-child{top:16px}.burger i:last-child{top:23px}
+  body.menu .burger i:first-child{transform:translateY(3.5px) rotate(45deg)}
+  body.menu .burger i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+  .label{font-size:10px;letter-spacing:.12em;gap:8px}
+  .label::before{width:14px}
+  .btn{height:42px;padding-inline:16px;font-size:13.5px;gap:8px;white-space:nowrap}
+  .hero{padding-top:calc(76px + env(safe-area-inset-top,0px))}
+  .hero-kicker{margin-bottom:18px}
+  .hero-kicker .label.plain{display:none}
+  .hero h1{font-size:clamp(36px,10.4vw,46px);letter-spacing:-.04em;line-height:1}
+  .hero-foot{gap:20px;margin-top:24px;padding-top:20px}
+  .hero-foot p{font-size:15px}
+  .hero-foot>div{gap:10px!important}
+  .scrollcue{display:none}
+  .ticker{padding-block:12px}
+  .ticker .tk{font-size:10.5px;gap:32px}
+  .ticker .tk span{gap:32px}
+  .mmenu{padding:calc(92px + env(safe-area-inset-top,0px)) var(--gut) 32px}
+  .mmenu a.big{font-size:28px;letter-spacing:-.02em;padding-block:14px}
+  .mmenu .foot{font-size:10.5px}
+  .phero{padding-top:calc(116px + env(safe-area-inset-top,0px))}
+  .phero h1{margin-top:18px}
+  .fhero{padding-top:calc(116px + env(safe-area-inset-top,0px))}
+  .sec{padding-block:72px}
+  .sec.tight{padding-block:56px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .lit .w{opacity:1!important}
+}
+</style>
+
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="canonical" href="https://vis10nholdings.com/rayj-dennis">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="VIS10N Holdings">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="RayJ Dennis | Founder &amp; CEO, VIS10N Holdings">
+<meta property="og:description" content="RayJ Dennis is the Founder and CEO of VIS10N Holdings and a point guard for the Atlanta Hawks. From Boise State, Toledo and Baylor to the NBA, he builds from within the sports economy.">
+<meta property="og:url" content="https://vis10nholdings.com/rayj-dennis">
+<meta property="og:image" content="https://vis10nholdings.com/img/og-rayj-dennis.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RayJ Dennis | Founder &amp; CEO, VIS10N Holdings">
+<meta name="twitter:description" content="RayJ Dennis is the Founder and CEO of VIS10N Holdings and a point guard for the Atlanta Hawks. From Boise State, Toledo and Baylor to the NBA, he builds from within the sports economy.">
+<meta name="twitter:image" content="https://vis10nholdings.com/img/og-rayj-dennis.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://vis10nholdings.com/#organization","name":"VIS10N Holdings","alternateName":"VIS10N","url":"https://vis10nholdings.com/","logo":{"@type":"ImageObject","url":"https://vis10nholdings.com/img/vis10n-logo-square.png","width":600,"height":600},"description":"VIS10N Holdings is a global holding company that invests in, builds and partners with ventures across sport, media, marketing, technology and real estate.","foundingDate":"2025","founder":{"@id":"https://vis10nholdings.com/rayj-dennis#person"},"sameAs":["https://www.linkedin.com/company/vis10n","https://www.instagram.com/vis10nholdings"],"subOrganization":{"@type":"Organization","name":"Vestrium Global","url":"https://vestriumglobal.com"}},{"@type":"WebSite","@id":"https://vis10nholdings.com/#website","url":"https://vis10nholdings.com/","name":"VIS10N Holdings","publisher":{"@id":"https://vis10nholdings.com/#organization"},"inLanguage":"en"},{"@type":"Person","@id":"https://vis10nholdings.com/rayj-dennis#person","name":"RayJ Dennis","alternateName":"Raymond Patterson Dennis","url":"https://vis10nholdings.com/rayj-dennis","image":"https://vis10nholdings.com/img/rayj-tunnel.jpg","jobTitle":"Founder and CEO","description":"RayJ Dennis is the Founder and CEO of VIS10N Holdings and a point guard for the Atlanta Hawks.","worksFor":{"@id":"https://vis10nholdings.com/#organization"},"affiliation":{"@type":"SportsTeam","name":"Atlanta Hawks","sport":"Basketball"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Baylor University"},{"@type":"CollegeOrUniversity","name":"University of Toledo"},{"@type":"CollegeOrUniversity","name":"Boise State University"}],"birthPlace":{"@type":"Place","name":"Plainfield, Illinois"},"knowsAbout":["Sports business","Athlete ownership","Venture investing","Real estate","Media and entertainment"],"sameAs":["https://www.instagram.com/rayjdennis10/","https://www.linkedin.com/in/rayj-dennis","https://en.wikipedia.org/wiki/RayJ_Dennis"]},{"@type":"ProfilePage","@id":"https://vis10nholdings.com/rayj-dennis#webpage","url":"https://vis10nholdings.com/rayj-dennis","name":"RayJ Dennis | Founder & CEO, VIS10N Holdings","description":"RayJ Dennis is the Founder and CEO of VIS10N Holdings and a point guard for the Atlanta Hawks. From Boise State, Toledo and Baylor to the NBA, he builds from within the sports economy.","isPartOf":{"@id":"https://vis10nholdings.com/#website"},"inLanguage":"en","primaryImageOfPage":{"@type":"ImageObject","url":"https://vis10nholdings.com/img/og-rayj-dennis.jpg"},"mainEntity":{"@id":"https://vis10nholdings.com/rayj-dennis#person"},"about":{"@id":"https://vis10nholdings.com/rayj-dennis#person"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vis10nholdings.com/"},{"@type":"ListItem","position":2,"name":"RayJ Dennis","item":"https://vis10nholdings.com/rayj-dennis"}]}]}</script>
+</head>
+<body>
+<div class="aura" aria-hidden="true"><i class="a1"></i><i class="a2"></i></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cur" aria-hidden="true"></div>
+<div class="readbar" aria-hidden="true"></div>
+
+<div id="intro" aria-hidden="true">
+  <div class="lw">
+    <img src="/img/vis10n-logo.png" alt="">
+  </div>
+</div>
+<div class="curtain" aria-hidden="true"><img src="/img/vis10n-mark.png" alt=""></div>
+<script>try{if(sessionStorage.getItem("v10-nav"))document.querySelector(".curtain").classList.add("hold")}catch(e){}</script>
+
+<header class="nav" id="nav">
+  <div class="wrap row">
+    <a class="brand" href="/" aria-label="VIS10N home"><img src="/img/vis10n-logo.png" alt="VIS10N"></a>
+    <nav class="links" aria-label="Main">
+      <a class="nl" href="/portfolio" data-r="portfolio">Portfolio</a>
+      <a class="nl" href="/rayj-dennis" data-r="founder">Founder</a>
+      <a class="nl" href="/insight" data-r="insight">Insight</a>
+      <button class="btn gold" type="button" data-enquire>Work with us
+        <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </nav>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true" data-lenis-prevent>
+  <div>
+    <a class="big" href="/">Home</a>
+    <a class="big" href="/portfolio">Portfolio</a>
+    <a class="big" href="/rayj-dennis">Founder</a>
+    <a class="big" href="/insight">Insight</a>
+  </div>
+  <div>
+    <button class="btn gold" type="button" data-enquire>Work with us <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+    <div class="foot"><span>VIS10N HOLDINGS</span><span>Sport · Media · Marketing · Technology · Real Estate</span></div>
+  </div>
+</div>
+
+
+
+<!-- ======================= FOUNDER ======================= -->
+<main class="page active" data-page="founder">
+  <section class="wrap fhero">
+    <div>
+      <span class="label">Leadership</span>
+      <h1 style="margin-top:28px"><span class="ln"><span>RayJ</span></span> <span class="ln"><span>Dennis</span></span></h1>
+      <div class="role"><span>Founder and CEO, VIS10N</span><span>Atlanta Hawks · NBA</span></div>
+      <p class="fintro">RayJ Dennis is the Founder and CEO of VIS10N Holdings, a global holding company investing across sport, media, marketing, technology and real estate, and a point guard for the Atlanta Hawks.</p>
+    </div>
+  </section>
+
+
+  <section class="wrap fsplit-wrap">
+    <div class="fsplit">
+      <div class="gal" id="gal" aria-label="Photos of RayJ Dennis">
+        <img class="on" src="/img/rayj-tunnel.jpg" alt="RayJ Dennis arriving through the Atlanta Hawks tunnel" style="object-position:52% 17%">
+        <img src="/img/rayj-game-red.jpg" alt="RayJ Dennis driving to the basket for the Atlanta Hawks" style="object-position:52% 12%">
+        <img src="/img/rayj-game-white.jpg" alt="RayJ Dennis bringing the ball up court for the Atlanta Hawks" style="object-position:50% 15%">
+        <div class="gcap"><span class="label plain" id="galCap">Atlanta · State Farm Arena</span><span class="gnum" id="galNum">01 / 03</span></div>
+      </div>
+      <div class="fsteps">
+        <div class="fstep" data-cap="Atlanta · State Farm Arena">
+          <span class="label">The perspective</span>
+          <p class="lit sm" data-lit>RayJ Dennis brings a rare combination of elite athletic performance, strategic business perspective, and entrepreneurial vision to his role as Founder and CEO of VIS10N.</p>
+        </div>
+        <div class="fstep" data-cap="Atlanta Hawks · No. 10">
+          <p class="lit sm" data-lit>His path from varsity basketball in Illinois, through Division I competition and into the NBA, has given him a direct understanding of the systems, opportunities, and pressures that define the modern sports landscape.</p>
+        </div>
+        <div class="fstep" data-cap="On the court">
+          <p class="lit sm" data-lit>That experience informs how he builds. <span class="k">Not from the outside, but from within.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top:clamp(48px,6vw,96px)">
+    <div class="stats" data-rv>
+      <div class="stat"><b data-count="3">3</b><span>Division I programs: Boise State, Toledo, Baylor</span></div>
+      <div class="stat"><b>2023</b><span>Unanimous MAC Player of the Year at Toledo</span></div>
+      <div class="stat"><b data-count="236">236</b><span>Assists at Baylor, third-most in a single season in program history</span></div>
+      <div class="stat"><b>2025</b><span>NBA debut, and the founding of VIS10N</span></div>
+    </div>
+  </section>
+
+  <section class="sec tight wrap">
+    <div class="path">
+      <div data-rv style="position:sticky;top:120px;align-self:start">
+        <span class="label">The path</span>
+        <h2 style="margin-top:22px">From the court to the <em>capital stack.</em></h2>
+      </div>
+      <ol class="tl" id="tl">
+        <span class="fill" aria-hidden="true"></span>
+        <li><span class="yr">PLAINFIELD &amp; OSWEGO, IL</span><h3>Raised in Illinois</h3><p>Born in Plainfield and raised between Plainfield and Oswego, he came through the varsity program at Oswego East High School and was named third-team all-state as a junior.</p></li>
+        <li><span class="yr">2019 – 2021</span><h3>Boise State</h3><p>Started his Division I career in the Mountain West, leading the Broncos in assists and steals as a sophomore.</p></li>
+        <li><span class="yr">2021 – 2023</span><h3>Toledo</h3><p>Unanimous MAC Player of the Year and First-Team All-MAC in 2023, leading the Rockets to a 27–8 record and the MAC regular-season title.</p></li>
+        <li><span class="yr">2023 – 2024</span><h3>Baylor</h3><p>All-Big 12 Second Team. His 236 assists rank third for a single season in Baylor program history.</p></li>
+        <li><span class="yr">2025</span><h3>The NBA, and VIS10N</h3><p>Made his NBA debut with the Indiana Pacers in January 2025, and founded VIS10N the same year to operate within a changing sports landscape.</p></li>
+        <li><span class="yr">2025 – PRESENT</span><h3>Atlanta Hawks</h3><p>Signed with the Atlanta Hawks on a two-way contract. Alongside his career, he leads VIS10N and co-founded Luxe Assist AI within the VIS10N ecosystem.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec tight wrap">
+    <div data-rv style="margin-bottom:clamp(32px,4vw,56px)"><span class="label">Value driven</span><h2 style="margin-top:22px;font-size:clamp(38px,5vw,80px);font-weight:200">Four principles guide <em>who we partner with.</em></h2></div>
+    <div class="vals">
+      <div class="val" data-rv><h3>Excellence</h3><p>A commitment to high standards, in both performance and execution.</p></div>
+      <div class="val" data-rv><h3>Innovation</h3><p>A forward-thinking approach to building within evolving industries.</p></div>
+      <div class="val" data-rv><h3>Compassion</h3><p>An understanding of the people behind every venture, partnership, and decision.</p></div>
+      <div class="val" data-rv><h3>Respect</h3><p>A foundation of trust, professionalism, and long-term alignment.</p></div>
+    </div>
+  </section>
+
+  <section class="sec wrap cta">
+    <span class="label">Partner with VIS10N</span>
+    <h2 class="huge" style="margin-top:28px" data-rv>Built from <em>experience.</em></h2>
+    <div class="row2" data-rv>
+      <p>We understand the athlete mindset and the realities of building and scaling a business. Bridging both worlds is our advantage.</p>
+      <button class="btn gold" type="button" data-enquire>Partner with us <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <img src="/img/vis10n-logo.png" alt="VIS10N">
+        <p>A global holding company operating at the intersection of sport, media, marketing, technology, and real estate.</p>
+      </div>
+      <div><h4>Invest</h4><ul><li><a href="/portfolio">Portfolio</a></li><li><a href="https://vestriumglobal.com" target="_blank" rel="noopener">Vestrium Global<svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></a></li><li><a href="/#convictions">Convictions</a></li><li><button type="button" data-enquire style="color:var(--fg-2)">Work with us</button></li></ul></div>
+      <div><h4>About</h4><ul><li><a href="/rayj-dennis">Founder and CEO</a></li><li><a href="/insight">Insight</a></li></ul></div>
+      <div><h4>Connect</h4><ul><li><a href="https://linkedin.com/company/vis10n" target="_blank" rel="noopener">LinkedIn<svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></a></li><li><a href="https://instagram.com/vis10nholdings" target="_blank" rel="noopener">Instagram<svg class="ext" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5"/></svg></a></li><li><button type="button" data-enquire style="color:var(--fg-2)">Contact</button></li></ul></div>
+    </div>
+    <div class="fbot"><span>© 2026 VIS10N Holdings. All rights reserved.</span><span><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Use</a></span><span>Designed and developed by <a href="https://reaustudio.com" target="_blank" rel="noopener">REAU Studio</a></span></div>
+  </div>
+</footer>
+
+<!-- ======================= ENQUIRY ======================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="panel" data-lenis-prevent>
+    <div class="ph"><span class="label">Work with VIS10N</span><button class="x" type="button" data-close aria-label="Close"></button></div>
+    <h2 id="mTitle">Let’s build <em>together.</em></h2>
+    <p class="intro">Tell us about what you are building, and a member of our team will be in contact shortly.</p>
+    <form class="enq" id="enq" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="enquiry">
+      <p hidden><label>Leave blank <input name="bot-field"></label></p>
+      <div class="two">
+        <div class="fld"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><span class="err"></span></div>
+        <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+      </div>
+      <div class="two">
+        <div class="fld"><label for="f-org">Company or organisation</label><input id="f-org" name="organisation" autocomplete="organization"></div>
+        <div class="fld"><label for="f-stage">Stage</label>
+          <select id="f-stage" name="stage"><option value="">Select</option><option>Pre-seed / idea</option><option>Seed</option><option>Series A+</option><option>Established business</option><option>Not applicable</option></select></div>
+      </div>
+      <div class="fld">
+        <span class="lg" id="lg-type">I am enquiring about</span>
+        <div class="opts" role="radiogroup" aria-labelledby="lg-type">
+          <input type="radio" name="type" id="t1" value="Investment" checked><label for="t1">Investment</label>
+          <input type="radio" name="type" id="t2" value="Strategic partnership"><label for="t2">Strategic partnership</label>
+          <input type="radio" name="type" id="t3" value="Athlete venture"><label for="t3">Athlete venture</label>
+          <input type="radio" name="type" id="t4" value="Media and press"><label for="t4">Media and press</label>
+          <input type="radio" name="type" id="t5" value="Other"><label for="t5">Other</label>
+        </div>
+      </div>
+      <div class="fld">
+        <span class="lg" id="lg-sec">Sector</span>
+        <div class="opts" role="group" aria-labelledby="lg-sec">
+          <input type="checkbox" name="sector" id="s1" value="Sports"><label for="s1">Sports</label>
+          <input type="checkbox" name="sector" id="s2" value="Real Estate"><label for="s2">Real Estate</label>
+          <input type="checkbox" name="sector" id="s3" value="Technology"><label for="s3">Technology</label>
+          <input type="checkbox" name="sector" id="s4" value="Marketing"><label for="s4">Marketing</label>
+          <input type="checkbox" name="sector" id="s5" value="Media and Entertainment"><label for="s5">Media and Entertainment</label>
+        </div>
+      </div>
+      <div class="fld"><label for="f-msg">Tell us more</label><textarea id="f-msg" name="message" required placeholder="What are you building, and where could VIS10N help?"></textarea><span class="err"></span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+                <button class="btn gold" type="submit" id="fSubmit">Send enquiry <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </form>
+    <div class="sent" id="sent" role="status" aria-live="polite">
+      <span class="label">Thank you</span>
+      <h3 id="sentH"></h3>
+      <p id="sentP"></p>
+      <div><button class="btn" type="button" data-close>Back to the site</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+const POSTS = [{"slug": "athletes-are-becoming-investors", "title": "Athletes Are The New Investors.", "date": "2026-04-09", "author": "RayJ Dennis", "cats": ["Sports", "Investing", "Business"], "excerpt": "Athletes are shifting from endorsement income to ownership and investment. How NIL, venture capital, and media are transforming athletes into long-term business builders.", "body": "## The Shift from Endorsement to Ownership Capital\nA structural shift is underway in the sports economy. For decades, athlete income was defined by contracts and endorsements. Brands held equity. Athletes provided visibility. The upside was capped. That model is changing.\nToday’s athletes are earning at a scale that allows them to move beyond sponsorships and into ownership, venture, media, and long-term asset building. Capital is no longer just earned. It is deployed. Endorsement generates income. Ownership builds enterprise value.\nThe athletes who understand this are repositioning themselves accordingly, moving from participants in the system to stakeholders within it.\n## This Is Bigger Than Branding\nThis shift is often framed as branding. It is not. It is a reallocation of capital.\nAthletes are beginning to hold equity across the industries that surround sport, from media and technology to consumer products and team ownership. The implications extend far beyond personal visibility.\nLeBron James built SpringHill Company while also holding a stake in Fenway Sports Group. Kevin Durant’s Thirty Five Ventures has invested in more than 100 startups across technology, media, and consumer sectors. Serena Williams’ Serena Ventures has backed more than 85 companies, several of which have reached significant scale. Roger Federer’s equity stake in On became one of the clearest examples of athlete ownership compounding into enterprise-level value.\n## Legacy Athletes Built the Blueprint\nThe first wave of athlete investors established the framework.\nLeBron James demonstrated that athlete capital could extend into media, production, and team ownership. Kevin Durant built a diversified investment vehicle while simultaneously creating a media platform that strengthens deal access and positioning. Serena Williams approached venture with institutional discipline, building a structured portfolio rather than making isolated bets. Roger Federer showed how a single, well-placed equity position could outperform years of traditional endorsement income.\nEach took a different route. The outcome was the same. Ownership became the central strategy.\nThese were not image plays designed for visibility. They were infrastructure plays designed for scale.\n## The New Generation Is Starting Earlier\nWhat is changing now is not just participation. It is timing.\nAthletes are no longer waiting until the latter stages of their careers to enter business. They are building while still active, with direct access to the environments shaping sport, media, and culture.\nCoco Gauff launched Coco Gauff Enterprises in 2025, taking control of her commercial strategy and long-term positioning. Angel Reese joined the ownership group of TOGETHXR while also investing in Brisbane’s bid for a women’s professional basketball franchise.\nAthletes are no longer preparing for business after sport. They are building alongside it, with a level of proximity and awareness that previous generations did not have.\n## NIL Changed the Capital Base\nThe introduction of NIL rights accelerated this shift.\nSince the NCAA’s 2021 policy change, college athletes have been able to monetize their name, image, and likeness. This created an entirely new entry point into the business of sport.\nFor the first time, athletes are building commercial leverage before turning professional.\nAs of April 2026, On3 lists Arch Manning at a $5.4 million NIL valuation, AJ Dybantsa at $4.2 million, and Jeremiah Smith at $4.2 million. These figures are not symbolic. They represent early-stage capital, audience ownership, and market positioning.\nAdd to this the post-House era of direct revenue sharing beginning in 2025–26, and the next generation of athletes is entering professional sports with:\n- More capital\n- Greater leverage\n- Stronger understanding of business and media\nNIL moves from income, to becoming infrastructure.\n## Bigger Contracts Are Expanding Optionality\nAt the professional level, contract size is amplifying opportunity.\nModern athlete earnings create the ability to think in portfolios rather than paychecks. This matters because capital enables participation in higher-value opportunities.\nAthletes can:\n- Invest in venture-backed companies\n- Take equity positions instead of flat endorsement fees\n- Build media platforms and production companies\n- Acquire ownership stakes in teams and leagues\n- Launch consumer brands with long-term upside\nThis creates optionality. Athletes are no longer limited to a single income stream. They can operate across multiple roles simultaneously, as investor, operator, media owner, and strategic partner. The scale of capital changes the scope of ambition.\n## Athletes Are Moving Into the Capital Stack\nThe next phase of this evolution is already visible. Athletes are no longer adjacent to business. They are becoming part of the capital stack itself. They are:\n- Backing early-stage technology companies\n- Building and owning media platforms\n- Investing in real estate and infrastructure\n- Acquiring stakes in teams and leagues\n- Launching consumer brands with global reach\nThe question is no longer whether athletes can invest. The question is how effectively they can deploy capital, and what systems they build around it. Those systems will determine long-term value.\n## What Comes Next\nAthletes are moving from participants in the sports economy to owners within it. The pace of this shift is accelerating, driven by earlier access to capital, greater business fluency, and direct control over distribution.\nFor companies like VIS10N, this expands the opportunity.\nThe focus is no longer on endorsement alignment. It is on ownership, infrastructure, and long-term value creation across sport, media, and business.\nThis is not a trend.\nIt is a transition in who builds, owns, and shapes the future of the sports economy."}, {"slug": "from-athlete-to-enterprise-5-athletes-building-billion-dollar-brands", "title": "From Athlete to Enterprise: 5 Athletes Building Billion-Dollar Brands", "date": "2026-03-25", "author": "RayJ Dennis", "cats": ["Sports", "Media and Entertainment", "Marketing"], "excerpt": "How elite athletes are building billion-dollar businesses across sports, media, and marketing, and how ownership, media, and investment are reshaping athlete careers.", "body": "## The Shift from Endorsement to Ownership\nThe athlete economy has moved past endorsement.\nWhat once functioned as a sponsorship model has evolved into a system of ownership, equity, and infrastructure. The most strategic athletes are no longer monetizing attention through brand deals alone. They are converting attention into assets.\nThis is the distinction.\nA personal brand generates income. A business system generates enterprise value.\nThe athletes leading this shift are building companies, investing in scalable platforms, and positioning themselves across industries where equity compounds over time. Media, consumer products, sports ownership, and technology are no longer adjacent. They are core to the model.\nThe outcome is clear.\nThe athlete is no longer talent. The athlete is enterprise.\n## Kevin Durant — Venture, Media, and Strategic Ownership\nKevin Durant is building one of the most structurally sound athlete-led portfolios in modern sport.\nThrough Thirty Five Ventures, Durant has invested in companies such as Postmates, Coinbase, Acorns, and Andbox, positioning himself early in high-growth sectors across technology, finance, and sports infrastructure.\nAt the same time, Boardroom operates as both a media company and a strategic asset. It sits at the center of sports business, providing access to founders, operators, and deal flow that traditional investors spend years trying to access.\nThis is a layered system.\nMedia builds influence. Influence creates access. Access drives investment opportunity. Investment creates equity.\nDurant is not building a brand. He is building a pipeline into ownership across industries that will continue compounding long after his playing career.\n## Serena Williams — Building a Scalable Investment Platform\nSerena Williams has transitioned from athlete to institutional investor with precision.\nSerena Ventures has deployed capital across more than 60 companies, including high-growth startups in fintech, health tech, and consumer platforms. Several of these companies have reached unicorn status, contributing to a portfolio that reflects true venture-scale returns.\nThis is not passive participation.\nSerena operates with a clear investment thesis, targeting underserved founders and high-growth categories. The portfolio is diversified, structured, and built for long-term value creation.\nIn parallel, she continues to expand into media, fashion, and consumer products, creating multiple entry points into scalable revenue streams.\nThis is how an empire is built.\nThrough disciplined capital allocation, diversified exposure, and long-term positioning.\n## Travis Kelce — Media, Production, and Consumer Expansion\nTravis Kelce represents one of the most commercially active athletes in American sport today, with a rapidly expanding business footprint across media, production, and consumer.\nThrough his production company, Kelce Jam and broader entertainment ventures, Kelce has moved directly into content creation, live events, and media distribution. His podcast New Heights, co-hosted with his brother Jason Kelce, has become one of the highest-performing sports podcasts globally, creating a media asset with both audience and monetization scale.\nThis is not ancillary content. It is infrastructure.\nKelce has also built a strong portfolio of brand partnerships across consumer, apparel, and lifestyle, aligning with companies that extend his reach beyond the NFL. These partnerships are increasingly structured with long-term upside, rather than one-off campaigns.\nThe strategy is clear.\nMedia builds audience. Audience drives monetization. Monetization supports expansion into owned ventures.\nKelce is building a media-first business system with the ability to scale into multiple verticals.\n## Shai Gilgeous-Alexander — Fashion, Identity, and Brand Ownership Potential\nShai Gilgeous-Alexander operates at the intersection of sport, luxury fashion, and cultural influence, positioning himself as one of the most commercially valuable athletes of the next decade.\nHis partnerships with brands such as Converse, where he serves as a global ambassador and signature athlete, represent more than endorsement. They are stepping stones toward product ownership and long-term equity.\nSGA has already begun shaping product direction, campaign identity, and brand positioning within these partnerships. This level of involvement signals a transition from ambassador to collaborator, and eventually to owner.\nBeyond footwear, his presence in luxury fashion and editorial spaces places him within a different category of athlete. He is not operating within sports marketing. He is operating within culture.\nThis creates long-term opportunity across:\n- Apparel and footwear lines\n- Creative direction and brand partnerships\n- Media and content platforms tied to fashion and identity\nSGA’s value is not just reach. It is taste.\nAnd taste, when leveraged correctly, becomes a scalable business.\n## Lionel Messi — Global Consumer Brand and Multi-Industry Expansion\nLionel Messi represents one of the most advanced examples of global athlete brand infrastructure in motion.\nThrough his expanding portfolio, Messi has built businesses across apparel, hospitality, and consumer products. His branded hotels, retail ventures, and licensing deals operate across international markets, creating diversified revenue streams tied to a single global identity.\nThis is supported by long-term partnerships with global brands such as Adidas, structured around product collaboration and sustained global distribution.\nMessi’s strategy is rooted in scale.\nHis brand operates across continents, allowing him to enter multiple industries with immediate traction. This creates a compounding effect, where each new venture benefits from existing global recognition.\nHe is not building a local business.\nHe is building a global enterprise.\n## What Connects Them\nAcross these athletes, the pattern is consistent.\nThey are not monetizing attention. They are converting it into ownership.\nThey build across multiple sectors. They invest early. They create media infrastructure. They align with brands that offer long-term equity rather than short-term exposure.\nMost importantly, they operate with systems in mind.\nEach business, investment, and partnership contributes to a broader structure of value creation. Nothing exists in isolation.\nThis is the difference between a brand and an empire.\n## NIL and the Acceleration of Athlete-Owned Businesses\nThe introduction of Name, Image, and Likeness (NIL) rights has fundamentally shifted the starting point.\nCollege athletes are no longer waiting until they turn professional to engage in business. They are building audiences, negotiating deals, launching products, and understanding brand value while still in school. This creates a new layer of experience that did not exist even five years ago.\nWhat begins as endorsement quickly evolves into strategy.\nAthletes are learning how to price their attention, structure partnerships, and identify long-term opportunities. Some are already moving beyond sponsorship into ownership, launching personal brands, equity-based deals, and early-stage ventures tied to their identity.\nThis early exposure compounds.\nBy the time these athletes reach the professional level, they are not entering as rookies in business. They arrive with established audiences, existing revenue streams, and a working understanding of how to operate within media, marketing, and commerce.\nNIL is not simply an additional income stream.\nIt is a training ground for ownership.\nIt compresses the timeline between athlete and entrepreneur, allowing the next generation to build infrastructure earlier, move with greater precision, and scale faster than those before them.\nThe result is a pipeline of athletes who are not learning business after sport, but alongside it.\n## Media, Marketing, and the Control of Narrative\nControl of narrative is control of value.\nAthletes who own their media platforms control how they are positioned, how they are perceived, and how they monetize their audience. This reduces reliance on external brands and increases long-term leverage.\nMarketing becomes embedded within the business.\nContent is not promotional. It is foundational.\nThe athletes building billion-dollar brands understand this. They invest in media, not as an add-on, but as a core asset.\n## VIS10N’s Position in This Landscape\nVIS10N operates within this exact shift.\nWe partner with athletes, founders, and businesses building across sports, media, marketing, entertainment, and real estate. The focus is on creating scalable systems that extend beyond individual careers.\nOwnership is central.\nMedia, real estate, and business development are integrated.\nThe objective is not visibility. It is value.\n## The Next Generation of Athlete Enterprises\nThe next wave is already forming, and it is notably more prepared. Athletes like Victor Wembanyama, Caleb Williams, and Jude Bellingham are entering their careers with fully developed personal brands, global visibility, and early exposure to business infrastructure.\nTheir positioning is not reactive. It is intentional from day one. Each operates with an understanding of media, partnerships, and long-term equity, creating a foundation that allows for faster expansion into ownership, product, and investment. The gap between athlete and enterprise is narrowing, and this cohort is positioned to close it entirely.\nThe next generation of athletes will build faster. They enter with audiences, with brand awareness, and with access to capital. They understand distribution from the outset. They are exposed to business earlier.\nThis compresses timelines. What once took a decade can now be built in years. The athletes who understand how to structure, invest, and scale will define the next era of business.\nThey are not preparing for life after sport. They are building alongside it."}, {"slug": "the-stadium-effect-how-sports-infrastructure-drives-real-estate-and-business-growth", "title": "The Stadium Effect: How Sports Infrastructure Drives Real Estate and Business Growth", "date": "2026-03-25", "author": "RayJ Dennis", "cats": ["Real Estate", "Sports"], "excerpt": "How stadium developments drive real estate investing, business development, and urban growth, and how investors capitalize on stadium-led opportunities.", "body": "## Stadiums as Economic Anchors\nStadiums have evolved into one of the most reliable catalysts for urban transformation.\nHistorically, they operated as isolated venues. High traffic on game day, limited activity outside of it. That model no longer holds. Today’s stadium is designed as a core asset within a broader real estate and business development strategy, influencing how entire districts are built, positioned, and valued.\nA modern stadium introduces three critical variables into a market: infrastructure investment, consistent foot traffic, and global visibility. These variables create the foundation for accelerated development.\nMunicipalities understand this. Private developers understand this. Institutional capital is increasingly structured around this.\nThe stadium is no longer the end product. It is the starting point.\n## Real Estate Development Around Stadiums\nReal estate development surrounding stadiums follows a layered progression, but the strongest projects are those that anticipate demand rather than react to it.\nThe initial phase typically involves infrastructure. Transportation, accessibility, and public investment reshape the immediate geography. This is followed by early commercial adoption, often led by hospitality and retail concepts that capitalize on immediate traffic.\nFrom there, the district expands.\nResidential developments begin to enter the market, driven by increased desirability and proximity to entertainment. Office and commercial spaces follow, particularly as brands and businesses seek to align themselves with high-visibility environments. Over time, the area transitions from event-driven activity to continuous engagement.\nThe most sophisticated developments are intentionally designed as mixed-use ecosystems from the outset.\nThe Battery in Atlanta is a clear example. Built around Truist Park, it integrates residential living, office space, retail, hospitality, and entertainment into a single, cohesive district. The result is not a venue surrounded by development, but a fully functioning environment that operates independently of game schedules.\nThis is where real estate development shifts from reactive to strategic.\n## Business Development as a Parallel Opportunity\nReal estate appreciation is only one layer of value.\nStadium districts create dense environments for business development, where proximity, traffic, and cultural relevance intersect. The concentration of people and attention allows businesses to scale faster, particularly those aligned with experience, lifestyle, and performance.\nHospitality concepts benefit from predictable demand cycles tied to events, but the strongest operators build for year-round engagement. Retail brands leverage both physical presence and digital amplification, using the environment as a stage for brand expression. Fitness and wellness facilities align directly with sports culture, creating natural product-market fit.\nThere is also a growing opportunity within media.\nStadium districts function as content environments. They provide access, atmosphere, and cultural proximity that can be leveraged for production, partnerships, and distribution. Media companies, creators, and marketing platforms can build within these ecosystems, using physical space as a driver of digital reach.\nThe intersection of real estate and media is becoming increasingly relevant.\n## Real Estate Investing in Emerging Stadium Districts\nThe highest returns in stadium-driven real estate are captured through timing and positioning.\nEarly-stage investment, particularly in developing areas of cities, allows investors to enter at lower valuations before infrastructure and demand fully mature. As the district develops, property values appreciate, rental yields strengthen, and commercial demand increases.\nHowever, this requires a long-term lens.\nShort-term speculation does not capture the full value of these environments. The strongest investors understand that stadium-led development unfolds over multiple phases, often spanning years. Positioning early and holding through growth cycles creates the greatest upside.\nEmerging markets and secondary cities present particularly strong opportunities. These locations often receive significant infrastructure investment with less initial competition, allowing for more strategic acquisition and development.\nInternationally, this trend is accelerating. Cities investing in sports infrastructure are simultaneously investing in tourism, global positioning, and economic expansion. Real estate sits at the center of that strategy.\n## The Rise of Mixed-Use Ecosystems\nThe defining feature of modern stadium development is integration.\nSingle-use venues have limited value. Mixed-use ecosystems create compounding returns.\nThese environments combine residential, hospitality, retail, office, and entertainment into a unified district. The goal is not to serve a single event, but to create a destination that operates continuously.\nThis structure generates multiple revenue streams across asset classes, reducing dependency on any one source of income. It also increases resilience, as different sectors within the ecosystem can perform independently.\nFrom an investment perspective, this allows for layered participation.\nAn investor can hold real estate, operate businesses within the district, and participate in media or brand partnerships that extend beyond the physical environment. Each layer reinforces the others.\n## VIS10N’s Perspective on Stadium-Driven Growth\nVIS10N approaches stadium-driven development as a multi-dimensional opportunity.\nReal estate is the foundation, but it is not the entirety of the strategy.\nWe look at how businesses can be built within these environments, how media and marketing can amplify reach, and how partnerships can be structured to create long-term value across multiple verticals.\nThis includes:\n- Identifying strategic real estate positions within developing districts\n- Building or partnering with businesses aligned to traffic and culture\n- Leveraging media to extend influence beyond physical space\n- Structuring investments that compound across sectors\nThe objective is not to participate in a single layer of the ecosystem. It is to operate across it.\n## Where the Opportunity is Moving\nThe next wave of opportunity is shifting toward cities and regions that are actively investing in sports infrastructure as part of broader economic strategy.\nThis includes:\n- Developing urban markets undergoing revitalization\n- Expanding secondary cities seeking to attract tourism and business\n- International markets positioning themselves through sport\nIn each case, the pattern remains consistent.\nSports infrastructure drives attention. Attention drives demand. Demand drives real estate and business growth.\nThe investors and operators who understand how to move early, structure intelligently, and build within these ecosystems will define the next generation of urban development."}, {"slug": "building-at-the-intersection-of-sports-business-and-culture", "title": "VIS10N Holdings: Building at the Intersection of Sports, Business, and Culture", "date": "2026-03-25", "author": "RayJ Dennis", "cats": ["Who We Are", "What We Do"], "excerpt": "VIS10N partners with startups and emerging businesses across sports, real estate, media, marketing, entertainment, and technology to build long-term value.", "body": "## A New Model for Modern Holdings\nVIS10N is a global holdings company operating at the intersection of sports, real estate, marketing, media, entertainment, and technology. We partner with startups and emerging businesses that are positioned to scale, not just within their industries, but within culture.\nThis distinction matters.\nThe next generation of high-growth companies are not built solely on product or service. They are built on distribution, positioning, and ecosystem strength. VIS10N is structured to support all three.\nWe do not operate as passive capital. We operate as a strategic partner, embedding into businesses to strengthen brand, refine direction, and unlock growth across multiple verticals. The focus is long-term value creation, with a clear understanding that modern companies require both infrastructure and influence to scale.\n## What We Do\nWe invest in and partner with businesses across five core sectors:\n- Sports and athlete-led ventures\n- Real estate and real estate development\n- Marketing and brand-driven companies\n- Media and entertainment platforms\n- Technology startups and digital infrastructure\nOur role extends beyond capital.\nWe work directly with founders and leadership teams to develop businesses with structural clarity and market positioning. This includes refining brand identity, strengthening revenue models, expanding into new markets, and building out media and content ecosystems that support sustained growth.\nIn real estate, this may involve identifying strategic development opportunities or integrating businesses into high-growth physical environments. In media and marketing, it involves building platforms that control narrative and distribution. In sports, it involves supporting athletes and organizations as they transition into ownership and enterprise.\nEvery investment is approached with the same lens: how does this scale, and how does it compound over time?\n## Partnering with Startups and Emerging Businesses\nVIS10N is actively seeking partnerships with startups and emerging businesses across real estate, technology, marketing, media, entertainment, and sports.\nWe prioritize:\n- Founders with clear vision and discipline\n- Businesses operating in high-growth or culturally relevant markets\n- Brands with the potential to extend beyond a single product or service\n- Opportunities where strategic involvement meaningfully accelerates growth\nThe partnership model is hands-on. We work closely with operators to guide positioning, support expansion, and introduce opportunities across our network.\nFor early-stage businesses, this often means building foundational structure. For more mature companies, it means scaling intelligently and expanding into adjacent markets.\nThe objective remains consistent: build companies that are durable, scalable, and valuable.\n## Built from Experience, Designed for Scale\nVIS10N is led by RayJ Dennis, whose background spans elite athletics and professional business environments.\nThat combination informs how we operate.\nHigh-performance sport creates a framework built on discipline, adaptability, and execution under pressure. Business requires those same qualities, applied to capital allocation, strategic decision-making, and long-term planning.\nVIS10N brings both perspectives into every partnership.\nWe understand the athlete mindset. We understand the realities of building and scaling a business. The ability to bridge these worlds creates a distinct advantage, particularly in sectors where sports, media, and enterprise increasingly overlap.\n## The Future of Holdings is Integrated\nThe most valuable companies today are not isolated. They are interconnected.\nA real estate investment can support hospitality and retail businesses. A media platform can drive demand across an entire portfolio. A marketing company can amplify brand equity across multiple ventures.\nVIS10N is structured to build and operate within these ecosystems.\nThis approach creates compounding value. Each business strengthens the next. Each investment contributes to a broader network of assets, influence, and opportunity.\nThe result is not a collection of companies, but a system designed for long-term growth.\n## Partner with VIS10N\nVIS10N is actively partnering with startups, founders, and emerging businesses across:\n- Real estate and real estate development\n- Technology and digital platforms\n- Marketing and brand-focused companies\n- Media and entertainment ventures\n- Sports and athlete-led businesses\nWe are particularly focused on businesses that understand the importance of positioning, ownership, and scale.\nIf you are building with intent, we are open to conversation."}];
+
+</script>
+<script>
+(() => {
+/* ================= CONFIG =================
+   FORM_ENDPOINT: set to a form service URL that emails chantelle.houareau@vis10nholdings.com
+   (e.g. Formspree "https://formspree.io/f/xxxx" or Web3Forms). Left empty, the form runs in preview mode. */
+const FORM_ENDPOINT = "";
+const RECIPIENT = "chantelle.houareau@vis10nholdings.com";
+
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const SPA = document.querySelectorAll('main.page').length > 1;
+const ARW = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 8h11M9 4l4 4-4 4"/></svg>';
+
+/* ================= DATA ================= */
+const SECTORS = [
+  {n:"Real Estate", lead:"The foundation for long-term value creation.", d:"Real estate anchors physical presence, enables experience, and connects communities. We invest with a focus on strategic development and activation. Spaces are no longer static assets; they are platforms for interaction, brand expression, and sustained economic activity, and we prioritise projects that integrate with culture and operate as part of a broader ecosystem."},
+  {n:"Sports", lead:"One of the most enduring and scalable global platforms.", d:"Sport commands attention, builds loyalty, and shapes identity across generations. Through athletes, leagues, and emerging formats it continues to expand beyond competition into media, commerce, and ownership. Our conviction lies in backing platforms and partnerships that extend the athlete and the game into long-term, diversified value."},
+  {n:"Technology", lead:"Infrastructure that compounds.", d:"Technology enables scale, drives efficiency, and unlocks new forms of interaction between brands and audiences. We invest in the systems, tools, and platforms that power growth and create competitive advantage: solutions that are integral rather than incremental, embedded within ecosystems and capable of compounding value over time."},
+  {n:"Marketing", lead:"Strategy, distribution, and growth.", d:"Marketing has evolved into a core driver of enterprise value. We invest in platforms, agencies, and capabilities that shape perception, build audience, and convert attention into measurable outcomes, with performance-driven systems that combine creativity with data."},
+  {n:"Media and Entertainment", lead:"Owning both the story and the channel.", d:"Media and entertainment operate as a single system of influence that shapes narrative and defines how culture moves. We invest in platforms that control distribution, build direct audience relationships, and translate engagement into enduring value, at scale and with the discipline required for long-term growth."}
+];
+const COS = [
+  {id:"healf", n:"Healf", s:"Health and Wellness", seed:11, v:0, lead:"Wellbeing, curated.", d:"Healf is a curated health and wellness platform built on a simple idea: better products lead to better lives. From supplements to sleep and recovery, it brings the most trusted brands in wellbeing into one considered destination, and has scaled rapidly from its London base.", focus:"Consumer health, e-commerce"},
+  {id:"augment", n:"Augment", s:"Technology", seed:23, v:1, lead:"Technology as infrastructure.", d:"Augment builds technology that extends what people and teams are capable of. Within the VIS10N ecosystem it reflects our conviction that the strongest platforms are built as infrastructure: embedded, scalable, and compounding over time.", focus:"Software, performance"},
+  {id:"atorie", n:"Atorie", s:"Fashion and Commerce", seed:37, v:2, lead:"From the atelier, direct.", d:"Atorie connects shoppers directly with independent ateliers, bringing craft-led design from the workshop to the wardrobe without the traditional layers in between. It reflects a shift VIS10N backs: brands built on taste, provenance, and direct relationships.", focus:"Marketplace, menswear"},
+  {id:"luxe", n:"Luxe Assist AI", s:"Artificial Intelligence", seed:41, v:3, lead:"Built inside the ecosystem.", d:"Co-founded by RayJ Dennis, Luxe Assist AI builds intelligent assistance for people whose time is their most valuable asset. It is the clearest expression of the VIS10N model: a venture built from within, with the network, brand, and operating support of the platform behind it from day one.", focus:"AI, concierge services"},
+  {id:"baselayer", n:"Baselayer", s:"Financial Technology", seed:53, v:4, lead:"Trust, engineered.", d:"Baselayer uses AI to help banks and fintechs verify businesses and stop fraud before it starts. Its risk engine gives institutions a clearer picture of who they are working with, turning compliance from a bottleneck into infrastructure.", focus:"Business identity, risk"},
+  {id:"rorra", n:"Rorra", s:"Consumer and Wellness", seed:67, v:5, lead:"Cleaner water, beautifully made.", d:"Rorra designs water filtration for the modern home, with filters engineered to remove more of what you do not want and products, including its glass and stainless steel pitcher, made to sit beautifully on the counter.", focus:"Home, water filtration"},
+  {id:"ziggiz", n:"Ziggiz", s:"Emerging Venture", seed:79, v:6, lead:"Early, and built to scale.", d:"Ziggiz is an early-stage venture building alongside VIS10N, where the platform contributes across brand, media, partnerships, and operational strategy to create the conditions for sustained growth.", focus:"Early stage"}
+];
+
+const LOGOS = {ziggiz:{src:"/img/logos/ziggiz.png",lh:2.0},rorra:{src:"/img/logos/rorra.png",lh:0.976},baselayer:{src:"/img/logos/baselayer.png",lh:0.818},healf:{src:"/img/logos/healf.png",lh:1.096},atorie:{src:"/img/logos/atorie.png",lh:0.902},augment:{src:"/img/logos/augment.png",lh:2.136},luxe:{src:"/img/logos/luxe.png",lh:1.177}};
+/* ================= GENERATIVE ART ================= */
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function drawArt(cv, seed, v){
+  const r = cv.getBoundingClientRect(); if(!r.width) return;
+  const dpr = Math.min(2, devicePixelRatio || 1), w = r.width, h = r.height;
+  cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr);
+  const c = cv.getContext('2d'); c.setTransform(dpr,0,0,dpr,0,0);
+  const R = rng(seed*9973);
+  const g = c.createLinearGradient(0,0,w,h); g.addColorStop(0,'#0e1116'); g.addColorStop(1,'#060708');
+  c.fillStyle = g; c.fillRect(0,0,w,h);
+  const gx = w*(.25+R()*.5), gy = h*(.2+R()*.6), gr = Math.max(w,h)*(.55+R()*.25);
+  const rg = c.createRadialGradient(gx,gy,0,gx,gy,gr);
+  rg.addColorStop(0,'rgba(92,161,246,.42)'); rg.addColorStop(.45,'rgba(92,161,246,.10)'); rg.addColorStop(1,'rgba(92,161,246,0)');
+  c.fillStyle = rg; c.fillRect(0,0,w,h);
+  c.lineWidth = 1; const S = Math.min(w,h);
+  const line = a => c.strokeStyle = `rgba(248,248,248,${a})`;
+  if(v===0){ // contour rings
+    for(let i=0;i<34;i++){ c.beginPath(); const rr=S*.04+i*S*.028; for(let t=0;t<=Math.PI*2+.05;t+=.05){ const n=Math.sin(t*3+i*.3+seed)*S*.018*(1+i*.04)+Math.sin(t*5-i*.2)*S*.008; const x=gx+Math.cos(t)*(rr+n)*1.15, y=gy+Math.sin(t)*(rr+n); t===0?c.moveTo(x,y):c.lineTo(x,y);} line(.05+.25*(1-i/34)); c.stroke(); }
+  } else if(v===1){ // flowing waves
+    for(let i=0;i<48;i++){ c.beginPath(); const y0=h*(i/48); for(let x=0;x<=w;x+=6){ const y=y0+Math.sin(x/w*Math.PI*2+i*.18+seed)*h*.06*Math.sin(i/48*Math.PI)+Math.cos(x/w*7+i*.4)*h*.012; x===0?c.moveTo(x,y):c.lineTo(x,y);} line(.04+.22*Math.sin(i/48*Math.PI)); c.stroke(); }
+  } else if(v===2){ // displaced dot grid
+    const st = S/26; for(let y=st/2;y<h;y+=st){ for(let x=st/2;x<w;x+=st){ const dx=x-gx, dy=y-gy, d=Math.hypot(dx,dy), k=Math.exp(-d/(S*.45)); const px=x+dx*k*.35, py=y+dy*k*.35; c.fillStyle=`rgba(248,248,248,${.08+k*.6})`; c.beginPath(); c.arc(px,py,.6+k*2.2,0,7); c.fill(); } }
+  } else if(v===3){ // radial burst
+    const n=180; for(let i=0;i<n;i++){ const a=i/n*Math.PI*2, r0=S*(.08+R()*.06), r1=S*(.3+R()*.9); c.beginPath(); c.moveTo(gx+Math.cos(a)*r0,gy+Math.sin(a)*r0); c.lineTo(gx+Math.cos(a)*r1,gy+Math.sin(a)*r1); line(.03+R()*.16); c.stroke(); }
+    c.beginPath(); c.arc(gx,gy,S*.07,0,7); c.strokeStyle='rgba(92,161,246,.9)'; c.stroke();
+  } else if(v===4){ // stacked arcs (stadium bowl)
+    for(let i=0;i<40;i++){ c.beginPath(); c.ellipse(w/2,h*1.05,w*(.12+i*.024),h*(.08+i*.03),0,Math.PI,Math.PI*2); line(.04+.22*(1-i/40)); c.stroke(); }
+  } else if(v===5){ // vertical light bars
+    const n=70; for(let i=0;i<n;i++){ const x=w*(i+.5)/n, k=Math.exp(-Math.abs(x-gx)/(w*.22)); const hh=h*(.15+k*.7)*(0.75+R()*.5); c.fillStyle=`rgba(248,248,248,${.04+k*.28})`; c.fillRect(x,h/2-hh/2,1,hh); }
+  } else { // diagonal lattice
+    for(let i=-60;i<60;i++){ c.beginPath(); const x0=i*S*.035; c.moveTo(x0,0); c.lineTo(x0+h*.9,h); line(.03+.12*Math.exp(-Math.abs(x0+h*.45-gx)/(w*.3))); c.stroke(); }
+    for(let i=0;i<9;i++){ c.beginPath(); c.arc(gx,gy,S*(.05+i*.05),0,7); line(.06+.04*(9-i)/9); c.stroke(); }
+  }
+  const vg = c.createRadialGradient(w/2,h/2,S*.3,w/2,h/2,Math.max(w,h)*.8);
+  vg.addColorStop(0,'rgba(6,7,8,0)'); vg.addColorStop(1,'rgba(6,7,8,.7)');
+  c.fillStyle = vg; c.fillRect(0,0,w,h);
+}
+const ARTS = [];
+function art(cv, seed, v){ for(let i=ARTS.length-1;i>=0;i--) if(ARTS[i][0]===cv || !ARTS[i][0].isConnected) ARTS.splice(i,1); ARTS.push([cv,seed,v]); drawArt(cv,seed,v); }
+function redrawArts(){ ARTS.forEach(([cv,s,v]) => { if(cv.isConnected && cv.offsetParent) drawArt(cv,s,v); }); }
+
+/* ================= RENDER STATIC LISTS ================= */
+if($('.ticker .tk')) $('.ticker .tk').innerHTML = (() => { const s = ["Real Estate","Sports","Technology","Marketing","Media and Entertainment","Athlete Ownership","Global Holdings"].map(t=>`<span>${t}</span>`).join(''); return s+s; })();
+
+if($('#conv')) $('#conv').innerHTML = SECTORS.map((s,i) => `
+  <div class="ci${i===0?' open':''}" data-rv>
+    <button type="button" aria-expanded="${i===0}"><span class="nm">${s.n}</span><span class="pm" aria-hidden="true"></span></button>
+    <div class="body"><div><div class="in"><p class="lead">${s.lead}</p><p class="d">${s.d}</p></div></div></div>
+  </div>`).join('');
+$$('#conv .ci').forEach(ci => ci.querySelector('button').addEventListener('click', () => {
+  const open = !ci.classList.contains('open');
+  $$('#conv .ci').forEach(o => { o.classList.remove('open'); o.querySelector('button').setAttribute('aria-expanded','false'); });
+  if(open){ ci.classList.add('open'); ci.querySelector('button').setAttribute('aria-expanded','true'); }
+}));
+
+const logoImg = (co, cls) => LOGOS[co.id] ? `<img class="${cls}" src="${LOGOS[co.id].src}" alt="${co.n}" style="--lh:${LOGOS[co.id].lh}">` : `<span class="${cls} txt">${co.n}</span>`;
+if($('#track')) $('#track').innerHTML = COS.map(co => `
+  <a class="pcard" href="/portfolio#co-${co.id}">
+    <div class="art"><canvas></canvas><span class="sx label plain">${co.s}</span>${logoImg(co,'lg')}</div>
+    <div class="meta"><span class="mt"><b>${co.n}</b><span>${co.lead}</span></span><span class="go">${ARW}</span></div>
+  </a>`).join('') + `
+  <div class="pcard end"><div class="art"><span class="label">Your venture</span><div><h3>Building at the intersection of sport and culture?</h3><div style="margin-top:24px"><button class="btn gold" type="button" data-enquire>Enquire ${ARW}</button></div></div></div><div class="meta"><span>We are selective, and deliberate.</span></div></div>`;
+$$('#track .pcard:not(.end) canvas').forEach((cv,i) => art(cv, COS[i].seed, COS[i].v));
+
+if($('#coList')) $('#coList').innerHTML = COS.map((co,i) => `
+  <article class="co" id="co-${co.id}">
+    <div class="hero-art" data-rv><canvas data-speed="0.06"></canvas>
+      <div class="over"><div class="top"><span class="label plain">${co.s}</span><span class="num">${String(i+1).padStart(2,'0')} / ${String(COS.length).padStart(2,'0')}</span></div><h2>${logoImg(co,'lg')}</h2></div>
+    </div>
+    <div class="info" data-rv>
+      <div class="nm"><h3>${co.n}</h3><p class="lead">${co.lead}</p></div>
+      <p class="d">${co.d}</p>
+      <dl><div><dt>Sector</dt><dd>${co.s}</dd></div><div><dt>Focus</dt><dd>${co.focus}</dd></div></dl>
+    </div>
+  </article>`).join('');
+$$('#coList canvas').forEach((cv,i) => art(cv, COS[i].seed, COS[i].v));
+
+/* ---- posts ---- */
+const fmt = d => new Date(d+'T12:00:00').toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase();
+const words = p => p.body.split(/\s+/).length;
+POSTS.forEach((p,i) => { p.seed = 101 + i*17; p.v = [3,0,4,1][i%4]; p.min = Math.max(2, Math.round(words(p)/230)); });
+const rowHTML = p => `<a class="irow" href="/insight/${p.slug}" data-peek="${p.slug}"><span class="dt">${fmt(p.date)}</span><h3>${p.title}</h3><span class="tags">${p.cats.slice(0,2).join(' · ')}</span><span class="go">${ARW}</span></a>`;
+if($('#homeRows')) $('#homeRows').innerHTML = POSTS.slice(0,3).map(rowHTML).join('');
+
+const CATS = ['All', ...new Set(POSTS.flatMap(p => p.cats))];
+let cat = 'All';
+function renderInsight(){
+  if(!$('#filters')) return;
+  $('#filters').innerHTML = CATS.map(c => `<button class="chip" type="button" aria-pressed="${c===cat}" data-cat="${c}">${c}</button>`).join('');
+  const list = POSTS.filter(p => cat==='All' || p.cats.includes(cat));
+  const [f, ...rest] = list;
+  $('#featured').innerHTML = f ? `
+    <a class="feat" href="/insight/${f.slug}">
+      <div class="art"><canvas id="featArt"></canvas></div>
+      <div><div class="meta"><span>${fmt(f.date)}</span><span>${f.min} min read</span><span>${f.cats[0]}</span></div><h2>${f.title}</h2><p>${f.excerpt}</p><div style="margin-top:28px"><span class="btn">Read the article ${ARW}</span></div></div>
+    </a>` : '<p class="empty">No articles in this topic yet.</p>';
+  if(f) art($('#featArt'), f.seed, f.v);
+  $('#insRows').innerHTML = rest.map(rowHTML).join('');
+  $$('#filters .chip').forEach(b => b.addEventListener('click', () => { cat = b.dataset.cat; renderInsight(); }));
+  bindPeek();
+}
+renderInsight();
+
+function mdToHTML(md){
+  const out = []; let ul = null;
+  md.split('\n').forEach(line => {
+    const t = line.trim(); if(!t) return;
+    if(t.startsWith('- ')){ if(!ul){ ul=[]; } ul.push(`<li>${t.slice(2)}</li>`); return; }
+    if(ul){ out.push(`<ul>${ul.join('')}</ul>`); ul=null; }
+    if(t.startsWith('## ')) out.push(`<h2>${t.slice(3)}</h2>`); else out.push(`<p>${t}</p>`);
+  });
+  if(ul) out.push(`<ul>${ul.join('')}</ul>`);
+  return out.join('');
+}
+function renderPost(slug){
+  const p = POSTS.find(x => x.slug===slug); if(!p || !$('#pTitle')) return false;
+  $('#pTitle').textContent = p.title;
+  $('#pMeta').innerHTML = `<span>${fmt(p.date)}</span><span>${p.author}</span><span>${p.min} min read</span><span>${p.cats.join(' · ')}</span>`;
+  $('#pLede').textContent = p.excerpt;
+  $('#pBody').innerHTML = mdToHTML(p.body);
+  if(SPA) document.title = p.title + ' | VIS10N Insight';
+  requestAnimationFrame(() => art($('#pArt'), p.seed, p.v));
+  $('#moreRows').innerHTML = POSTS.filter(x => x!==p).slice(0,3).map(rowHTML).join('');
+  bindPeek();
+  return true;
+}
+$('#copyLink') && $('#copyLink').addEventListener('click', e => {
+  const b = e.currentTarget, url = location.href;
+  const ok = () => { b.textContent = 'Link copied'; setTimeout(() => b.textContent = 'Copy link', 1800); };
+  try { navigator.clipboard.writeText(url).then(ok, () => { b.textContent = url; }); } catch(_) { b.textContent = url; }
+});
+
+/* hover peek for insight rows */
+
+let px = 0, py = 0, pcx = 0, pcy = 0;
+function bindPeek(){
+  /* hover preview removed */
+}
+bindPeek();
+
+/* ================= HERO FIELD (flow lines) ================= */
+const field = $('#field'), fc = field ? field.getContext('2d') : null;
+let FW, FH, parts = [], mouse = {x:-9999, y:-9999};
+function sizeField(){
+  if(!field) return;
+  const dpr = Math.min(2, devicePixelRatio||1); const r = field.getBoundingClientRect();
+  FW = r.width; FH = r.height; field.width = FW*dpr; field.height = FH*dpr; fc.setTransform(dpr,0,0,dpr,0,0);
+  fc.fillStyle = '#060708'; fc.fillRect(0,0,FW,FH);
+  const n = Math.round(Math.min(1400, FW*FH/900));
+  parts = Array.from({length:n}, () => ({x:Math.random()*FW, y:Math.random()*FH, a:Math.random(), l:Math.random()*300|0, b:Math.random()<.12}));
+}
+function flow(x,y,t){
+  const s = .0016;
+  return Math.sin(x*s + t*.00012)*1.6 + Math.cos(y*s*1.3 - t*.00009)*1.4 + Math.sin((x+y)*s*.6 + t*.00005)*1.1;
+}
+let fieldOn = true;
+function stepField(t){
+  if(!fieldOn || !field) return;
+  fc.fillStyle = 'rgba(6,7,8,.075)'; fc.fillRect(0,0,FW,FH);
+  fc.lineWidth = .8;
+  for(const p of parts){
+    const a = flow(p.x,p.y,t);
+    let vx = Math.cos(a)*1.1 + .35, vy = Math.sin(a)*1.1;
+    const dx = p.x-mouse.x, dy = p.y-mouse.y, d2 = dx*dx+dy*dy;
+    if(d2 < 26000){ const f = (1 - d2/26000)*2.6; vx += dx/Math.sqrt(d2+1)*f; vy += dy/Math.sqrt(d2+1)*f; }
+    const nx = p.x+vx, ny = p.y+vy;
+    fc.strokeStyle = p.b ? 'rgba(92,161,246,.55)' : 'rgba(248,248,248,.22)';
+    fc.beginPath(); fc.moveTo(p.x,p.y); fc.lineTo(nx,ny); fc.stroke();
+    p.x = nx; p.y = ny; p.l--;
+    if(p.l<0 || nx<-10 || nx>FW+10 || ny<-10 || ny>FH+10){ p.x=Math.random()*FW; p.y=Math.random()*FH; p.l=120+Math.random()*260|0; }
+  }
+}
+if(field){
+field.parentElement.addEventListener('pointermove', e => { const r = field.getBoundingClientRect(); mouse.x = e.clientX-r.left; mouse.y = e.clientY-r.top; });
+field.parentElement.addEventListener('pointerleave', () => { mouse.x = mouse.y = -9999; });
+}
+sizeField();
+if(RM){ for(let i=0;i<220;i++) stepField(i*16); }
+
+/* ================= SCROLL-LIT TEXT ================= */
+function splitLit(el){
+  if(el._split) return; el._split = 1;
+  const walk = (node, k) => {
+    [...node.childNodes].forEach(ch => {
+      if(ch.nodeType===3){
+        const frag = document.createDocumentFragment();
+        ch.textContent.split(/(\s+)/).forEach(tk => {
+          if(!tk) return;
+          if(/^\s+$/.test(tk)){ frag.appendChild(document.createTextNode(tk)); return; }
+          const s = document.createElement('span'); s.className = 'w'+(k?' k':''); s.textContent = tk; frag.appendChild(s);
+        });
+        ch.replaceWith(frag);
+      } else if(ch.nodeType===1){
+        const isK = ch.classList.contains('k');
+        if(isK){ walk(ch, true); ch.replaceWith(...ch.childNodes); } else walk(ch, k);
+      }
+    });
+  };
+  walk(el, false);
+  el._w = $$('.w', el);
+}
+$$('[data-lit]').forEach(splitLit);
+
+/* ================= REVEAL ================= */
+let io;
+function armReveal(scope){
+  if(RM) return;
+  io && io.disconnect();
+  io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ const el=e.target; el.classList.add('rv-go'); el.classList.remove('rv-pending'); io.unobserve(el); } }), {rootMargin:'0px 0px -8% 0px'});
+  const vh = innerHeight;
+  $$('[data-rv]', scope).forEach((el,i) => {
+    el.classList.remove('rv-go','rv-pending');
+    if(el.getBoundingClientRect().top > vh*.92){ el.classList.add('rv-pending'); el.style.transitionDelay = ((i%4)*70)+'ms'; io.observe(el); }
+  });
+}
+
+/* ================= SMOOTH SCROLL ================= */
+let lenis = null;
+if(!RM && window.Lenis){ try { lenis = new Lenis({duration:1.15, smoothWheel:true, wheelMultiplier:.95}); } catch(_) { lenis = null; } }
+const scrollTo0 = () => { lenis ? lenis.scrollTo(0,{immediate:true}) : scrollTo(0,0); };
+const scrollToEl = el => { const y = el.getBoundingClientRect().top + scrollY - 90; lenis ? lenis.scrollTo(y,{duration:1.4}) : scrollTo({top:y, behavior: RM?'auto':'smooth'}); };
+
+/* ================= MAIN LOOP ================= */
+const nav = $('#nav'), aura = $('.aura'), readbar = $('.readbar'), hpin = $('#hpin'), track = $('#track');
+let cur = 'home';
+function hpinSize(){
+  if(!hpin || !track) return;
+  if(innerWidth<=640){ hpin.style.height = ''; return; }
+  const extra = track.scrollWidth - innerWidth;
+  hpin.style.height = (innerHeight + Math.max(0,extra)) + 'px';
+}
+function frame(t){
+  lenis && lenis.raf(t);
+  const vh = innerHeight, sy = scrollY;
+  nav.classList.toggle('solid', sy > 40);
+  const docH = document.documentElement.scrollHeight - vh;
+  const prog = docH>0 ? sy/docH : 0;
+  aura.style.transform = `translate3d(${Math.sin(prog*Math.PI*2)*6}vmax, ${-prog*18}vmax, 0) rotate(${prog*40}deg)`;
+
+  if(cur==='home' && field){
+    const hr = field.getBoundingClientRect();
+    if(hr.bottom > 0 && !RM) stepField(t);
+    if(innerWidth>640 && hpin){
+      const r = hpin.getBoundingClientRect(), extra = track.scrollWidth - innerWidth;
+      const p = clamp(-r.top / Math.max(1, r.height - vh));
+      track.style.transform = `translate3d(${-p*Math.max(0,extra)}px,0,0)`;
+      $('#hpb').style.width = (p*100)+'%';
+      $('#hpn').textContent = String(Math.min(COS.length, 1+Math.floor(p*COS.length))).padStart(2,'0') + ' / ' + String(COS.length).padStart(2,'0');
+    }
+  }
+  // lit text
+  $$('main.page.active [data-lit]').forEach(el => {
+    const r = el.getBoundingClientRect(); if(r.bottom < -50 || r.top > vh+50) return;
+    const p = clamp((vh*.88 - r.top) / (r.height + vh*.38));
+    const n = el._w.length, lit = p*n*1.08;
+    el._w.forEach((w,i) => { const o = .14 + .86*clamp(lit - i); if(w._o!==o){ w._o=o; w.style.opacity = o.toFixed(3); } });
+  });
+  // parallax
+  if(!RM) $$('main.page.active [data-speed]').forEach(el => {
+    const box = el.parentElement.getBoundingClientRect(); if(box.bottom<0||box.top>vh) return;
+    const c = box.top + box.height/2 - vh/2; el.style.transform = `translate3d(0,${c*parseFloat(el.dataset.speed)}px,0)`;
+  });
+  // timeline fill
+  if(cur==='founder' && $('#tl')){
+    const steps = $$('.fstep'), mid = vh*(innerWidth<=980 ? .72 : .55);
+    let gi = 0; steps.forEach((s,i) => { if(s.getBoundingClientRect().top < mid) gi = i; });
+    if(gi !== frame._gi){ frame._gi = gi;
+      $$('#gal img').forEach((im,i) => im.classList.toggle('on', i===gi));
+      $('#galNum').textContent = String(gi+1).padStart(2,'0') + ' / ' + String(steps.length).padStart(2,'0');
+      $('#galCap').textContent = steps[gi].dataset.cap; }
+    const tl = $('#tl'), r = tl.getBoundingClientRect(), fill = $('.fill', tl);
+    const p = clamp((vh*.6 - r.top)/r.height); fill.style.height = (p*(r.height-20))+'px';
+    $$('li', tl).forEach(li => li.classList.toggle('on', li.getBoundingClientRect().top < vh*.6));
+  }
+  if(cur==='post' && $('main[data-page="post"] .prose')){
+    const a = $('main[data-page="post"] .prose'), r = a.getBoundingClientRect();
+    readbar.style.width = (clamp((vh*.5 - r.top)/(r.height))*100)+'%';
+  } else readbar.style.width = 0;
+  // peek follow
+  
+  requestAnimationFrame(frame);
+}
+
+/* ================= CURSOR ================= */
+const cursor = $('.cur'); let cx=0, cy=0, tx=0, ty=0;
+addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; px = e.clientX; py = e.clientY;
+  const hot = e.target.closest && e.target.closest('a,button,label,.pcard');
+  cursor.classList.toggle('big', !!hot && !e.target.closest('.modal'));
+});
+(function cl(){ cx += (tx-cx)*.35; cy += (ty-cy)*.35; cursor.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(cl); })();
+
+/* ================= ROUTER =================
+   Live site: every page is its own file (/, /portfolio, /rayj-dennis, /insight, /insight/<slug>, /privacy, /terms).
+   Links do a curtain wipe, then load the next page, which wipes back in.
+   Preview (one file holding every page): the same links switch pages in place using #tokens. */
+const curtain = $('.curtain');
+let first = true, curSlug = null;
+const KEY_OF = {'/':'home','/portfolio':'portfolio','/rayj-dennis':'founder','/insight':'insight','/privacy':'privacy','/terms':'terms'};
+function routeFromPath(path, hash){
+  path = (path||'/').replace(/\.html$/,'').replace(/\/index$/,'').replace(/\/+$/,'') || '/';
+  hash = (hash||'').replace(/^#/,'');
+  const r = {};
+  if(path.startsWith('/insight/')){ r.page = 'post'; r.slug = path.slice(9); }
+  else r.page = KEY_OF[path] || 'home';
+  if(hash==='enquire') r.enquire = true;
+  else if(hash.startsWith('co-')) r.co = hash;
+  else if(hash) r.to = hash;
+  return r;
+}
+function parseSPA(){
+  const h = decodeURIComponent(location.hash.slice(1));
+  if(!h || h==='home') return {page:'home'};
+  if(['portfolio','founder','insight','privacy','terms'].includes(h)) return {page:h};
+  if(h.startsWith('post-')) return {page:'post', slug:h.slice(5)};
+  if(h.startsWith('co-')) return {page:'portfolio', co:h};
+  if(h==='enquire') return {page:cur||'home', enquire:true};
+  return {page:'home', to:h};
+}
+const tokenFor = r => r.page==='post' ? 'post-'+r.slug : r.co ? r.co : (r.to && r.page==='home') ? r.to : r.page;
+function show(r){
+  if(r.page==='post' && !renderPost(r.slug) && SPA) r = {page:'insight'};
+  if(SPA && r.page!=='post') document.title = {home:'VIS10N Holdings', portfolio:'Portfolio | VIS10N Holdings', founder:'RayJ Dennis | Founder & CEO, VIS10N Holdings', insight:'Insight | VIS10N Holdings', privacy:'Privacy Policy | VIS10N Holdings', terms:'Terms of Use | VIS10N Holdings'}[r.page];
+  cur = r.page; curSlug = r.slug || null;
+  if(SPA) $$('main.page').forEach(m => m.classList.toggle('active', m.dataset.page===r.page));
+  $$('.links .nl').forEach(a => a.classList.toggle('on', a.dataset.r===r.page || (r.page==='post' && a.dataset.r==='insight')));
+  document.body.classList.remove('menu'); $('.burger').setAttribute('aria-expanded','false');
+  if(SPA) scrollTo0();
+  requestAnimationFrame(() => {
+    redrawArts(); hpinSize(); if(r.page==='home') sizeField();
+    armReveal($('main.page.active'));
+    const id = r.co || r.to; const el = id && document.getElementById(id);
+    if(el) setTimeout(() => scrollToEl(el), 120);
+  });
+  if(r.enquire) openModal();
+}
+function route(){
+  const r = parseSPA();
+  if(r.enquire && !first){ openModal(); return; }
+  if(first || RM){ first = false; show(r); return; }
+  curtain.className = 'curtain in';
+  setTimeout(() => { show(r); curtain.className = 'curtain out'; setTimeout(() => curtain.className = 'curtain', 700); }, 560);
+}
+function leaveTo(href){
+  try { sessionStorage.setItem('v10-nav','1'); } catch(_){}
+  if(RM){ location.href = href; return; }
+  curtain.className = 'curtain in';
+  setTimeout(() => { location.href = href; }, 520);
+}
+document.addEventListener('click', e => {
+  const lg = e.target.closest('a[data-legal]');
+  if(lg){ e.preventDefault(); const el = document.getElementById(lg.dataset.legal); if(el) scrollToEl(el); return; }
+  const a = e.target.closest('a[href]');
+  if(!a || a.target==='_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+  const href = a.getAttribute('href');
+  if(!href.startsWith('/')) return;
+  e.preventDefault();
+  document.body.classList.remove('menu');
+  const [p, h] = href.split('#');
+  const r = routeFromPath(p || '/', h);
+  if(r.page===cur && (r.page!=='post' || r.slug===curSlug)){
+    const id = r.co || r.to; const el = id && document.getElementById(id);
+    if(el) scrollToEl(el); else scrollTo0();
+    if(r.enquire) openModal();
+    return;
+  }
+  if(SPA){ location.hash = tokenFor(r); return; }
+  leaveTo(href);
+});
+$('.burger').addEventListener('click', () => { const on = !document.body.classList.contains('menu'); document.body.classList.toggle('menu', on); $('.burger').setAttribute('aria-expanded', on); $('#mmenu').setAttribute('aria-hidden', !on); });
+function boot(){
+  if(SPA){ addEventListener('hashchange', route); route(); return; }
+  const h = location.hash.slice(1);
+  const legacy = {founder:'/rayj-dennis', portfolio:'/portfolio', insight:'/insight', privacy:'/privacy', terms:'/terms'};
+  if(legacy[h]){ location.replace(legacy[h]); return; }
+  if(h.startsWith('post-')){ location.replace('/insight/' + h.slice(5)); return; }
+  const r = routeFromPath(location.pathname, location.hash);
+  r.page = document.documentElement.dataset.page || r.page;
+  if(r.page!=='post') delete r.slug;
+  first = false; show(r);
+  if(curtain.classList.contains('hold')) requestAnimationFrame(() => requestAnimationFrame(() => { curtain.className = 'curtain out'; setTimeout(() => curtain.className = 'curtain', 700); }));
+  try { sessionStorage.removeItem('v10-nav'); } catch(_){}
+  addEventListener('hashchange', () => { if(location.hash==='#enquire') openModal(); });
+  addEventListener('pageshow', e => { if(e.persisted) curtain.className = 'curtain'; });
+}
+
+/* ================= ENQUIRY MODAL ================= */
+const modal = $('#modal'), form = $('#enq'); let lastFocus = null;
+function openModal(){
+  lastFocus = document.activeElement; document.body.classList.remove('menu');
+  modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+  lenis && lenis.stop(); document.documentElement.style.overflow = 'hidden';
+  setTimeout(() => $('#f-name').focus({preventScroll:true}), 450);
+}
+function closeModal(){
+  modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
+  lenis && lenis.start(); document.documentElement.style.overflow = '';
+  lastFocus && lastFocus.focus && lastFocus.focus({preventScroll:true});
+}
+document.addEventListener('click', e => { if(e.target.closest('[data-enquire]')){ e.preventDefault(); openModal(); } if(e.target.closest('[data-close]')) closeModal(); });
+addEventListener('keydown', e => {
+  if(e.key==='Escape' && modal.classList.contains('open')) closeModal();
+  if(e.key==='Tab' && modal.classList.contains('open')){
+    const f = $$('button,input,select,textarea,a[href]', modal).filter(x => x.offsetParent);
+    if(!f.length) return; const a = f[0], z = f[f.length-1];
+    if(e.shiftKey && document.activeElement===a){ e.preventDefault(); z.focus(); } else if(!e.shiftKey && document.activeElement===z){ e.preventDefault(); a.focus(); }
+  }
+});
+try { const d = JSON.parse(localStorage.getItem('v10-draft')||'null'); if(d){ ['name','email','organisation','message'].forEach(k => { if(d[k] && form.elements[k]) form.elements[k].value = d[k]; }); } } catch(_){}
+form.addEventListener('input', () => { try { localStorage.setItem('v10-draft', JSON.stringify({name:form.elements.name.value, email:form.elements.email.value, organisation:form.elements.organisation.value, message:form.elements.message.value})); } catch(_){} });
+function setErr(id, msg){ const f = $('#'+id).closest('.fld'); f.classList.toggle('bad', !!msg); $('.err', f).textContent = msg||''; }
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = form.elements.name.value.trim(), email = form.elements.email.value.trim(), msg = form.elements.message.value.trim();
+  setErr('f-name', name ? '' : 'Please add your name.');
+  setErr('f-email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? '' : 'Please enter a valid email address.');
+  setErr('f-msg', msg.length >= 10 ? '' : 'A sentence or two about what you are building helps us respond.');
+  if(!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || msg.length<10){ $('.fld.bad input, .fld.bad textarea', form)?.focus(); return; }
+  const data = {
+    _to: RECIPIENT, _subject: `VIS10N enquiry: ${form.elements.type.value} from ${name}`,
+    name, email, organisation: form.elements.organisation.value.trim(), stage: form.elements.stage.value,
+    enquiry_type: form.elements.type.value, sectors: $$('input[name="sector"]:checked', form).map(x=>x.value).join(', '), message: msg
+  };
+  const btn = $('#fSubmit'); btn.disabled = true; btn.firstChild.textContent = 'Sending… ';
+  let delivered = false, failed = false;
+  const onLiveSite = /^https?:$/.test(location.protocol) && !/claude/i.test(location.hostname) && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  if(FORM_ENDPOINT){
+    try { const r = await fetch(FORM_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(data)}); delivered = r.ok; failed = !r.ok; } catch(_){ failed = true; }
+  } else if(onLiveSite){
+    /* Netlify Forms: submissions appear under Forms > enquiry; email notifications go to RECIPIENT once set in Netlify */
+    try {
+      const fd = new FormData(form); fd.set('sector', data.sectors); fd.set('subject', data._subject);
+      const r = await fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: new URLSearchParams(fd).toString()});
+      delivered = r.ok; failed = !r.ok;
+    } catch(_){ failed = true; }
+  }
+  btn.disabled = false; btn.firstChild.textContent = 'Send enquiry ';
+  if(failed){ setErr('f-msg', `We couldn't send this just now. Please try again, or email ${RECIPIENT}.`); return; }
+  form.style.display = 'none'; $('#sent').classList.add('on');
+  const first = name.split(' ')[0];
+  if(delivered){
+    $('#sentH').innerHTML = `Thank you, ${first.replace(/</g,'&lt;')}.`;
+    $('#sentP').textContent = 'Your enquiry is with our team. We review every message personally and will be in touch shortly.';
+    try { localStorage.removeItem('v10-draft'); } catch(_){}
+  } else {
+    $('#sentH').innerHTML = `Thank you, ${first.replace(/</g,'&lt;')}.`;
+    $('#sentP').textContent = `Design preview: this form is not connected to email yet, so nothing was sent. On the live site, this enquiry goes straight to ${RECIPIENT}.`;
+  }
+});
+modal.addEventListener('transitionend', e => { if(e.target===modal.querySelector('.panel') && !modal.classList.contains('open')){ form.style.display=''; $('#sent').classList.remove('on'); } });
+
+/* ================= INTRO + BOOT ================= */
+const intro = $('#intro');
+let seen = false; try { seen = sessionStorage.getItem('v10-intro')==='1'; } catch(_){}
+if(RM || seen){ intro.classList.add('gone'); }
+else {
+  setTimeout(() => { intro.classList.add('out'); try{ sessionStorage.setItem('v10-intro','1'); }catch(_){} }, 1500);
+  setTimeout(() => intro.classList.add('gone'), 2700);
+}
+boot();
+let rz; addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { redrawArts(); hpinSize(); if(cur==='home') sizeField(); }, 160); });
+addEventListener('load', hpinSize);
+requestAnimationFrame(frame);
+})();
+</script>
+
+</body>
+</html>

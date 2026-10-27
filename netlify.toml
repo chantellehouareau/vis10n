@@ -1,9 +1,106 @@
+# Pages are prebuilt by build.py and committed, so Netlify just publishes the folder.
 [build]
   publish = "."
 
+# ---- Clean page addresses -------------------------------------------------
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 200
+[[redirects]]
+  from = "/rayj-dennis"
+  to = "/rayj-dennis.html"
+  status = 200
+[[redirects]]
+  from = "/insight"
+  to = "/insight.html"
+  status = 200
+[[redirects]]
+  from = "/insight/:slug"
+  to = "/insight/:slug.html"
+  status = 200
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+# ---- Old Squarespace addresses, so existing links and search results land on the new pages ----
+[[redirects]]
+  from = "/leadership"
+  to = "/rayj-dennis"
+  status = 301
+[[redirects]]
+  from = "/founder"
+  to = "/rayj-dennis"
+  status = 301
+[[redirects]]
+  from = "/partners"
+  to = "/portfolio"
+  status = 301
+[[redirects]]
+  from = "/the-company"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/about-us"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/vis10n-philosophy"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/what-we-do"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/values"
+  to = "/rayj-dennis"
+  status = 301
+[[redirects]]
+  from = "/contact"
+  to = "/#enquire"
+  status = 301
+[[redirects]]
+  from = "/blog"
+  to = "/insight"
+  status = 301
+[[redirects]]
+  from = "/insight/category/*"
+  to = "/insight"
+  status = 301
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy"
+  status = 301
+[[redirects]]
+  from = "/terms-of-use"
+  to = "/terms"
+  status = 301
+
+# ---- Headers ---------------------------------------------------------------
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# The editable sources and build script are not part of the public site.
+[[redirects]]
+  from = "/src/*"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/build.py"
+  to = "/404.html"
+  status = 404

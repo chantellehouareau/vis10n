@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vis10nholdings.com/sitemap.xml
